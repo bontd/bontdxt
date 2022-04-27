@@ -1,0 +1,283 @@
+// FIRSTVIEW
+// ============================================
+
+.firstview {
+    position: relative;
+    padding-top: 124.5327%;
+    background: url(../image/firstview_sp@2x.png) no-repeat right bottom/92%;
+    margin-bottom: 1.875rem;
+    margin-top: 5.25rem;
+    @include md {
+        padding-top: 50.058%;
+        background: url(../image/firstview_pc@2x.png) no-repeat center top/90%;
+        margin-bottom: 3.125rem;
+        margin-top: 8rem;
+    }
+    &_copy {
+        @extend .font-size-firstview;
+        position: absolute;
+        top: 1.375rem;
+        left: calc(37/428*100vw);
+        line-height: 1.4;
+        @include lg {
+            top: 1.43rem;
+            left: calc(168/1360*100vw);
+        }
+    }
+}
+
+.news {
+    &_twitter,
+    &_contents {
+        width: 100%;
+        @include md {
+            width: 50%;
+        }
+    }
+    &_twitter {
+        max-height: 450px;
+        overflow: hidden;
+        @include lg {
+            padding-right: 7.25rem;
+        }
+    }
+    &_contents {
+        position: relative;
+        padding: 64px 35px 80px;
+        border-radius: 150px;
+        margin: 30px 0 0;
+        @include md {
+            border-radius: 100px;
+            padding: 3.75rem 3.75rem 1.87rem 3.62rem;
+            margin: 0;
+        }
+        @include lg {
+            border-radius: 11.25rem;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -25px;
+            right: 37.9px;
+            width: 92.67px;
+            height: 70.62px;
+            background-image: url('../image/icon_circle3_sp@2x.png');
+            background-size: cover;
+            @include md {
+                width: 5.81rem;
+                height: 6rem;
+                bottom: 0;
+                right: 0;
+                background-image: url('../image/icon_circle3_pc@2x.png');
+            }
+        }
+    }
+    &_list {
+        &_item {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.about {
+    .container {
+        max-width: 92%;
+    }
+    .ttl {
+        @include md {
+            margin-bottom: 3.75rem;
+        }
+    }
+    &_thubmnail {
+        margin-bottom: 30px;
+        @include md {
+            margin-bottom: 0;
+        }
+    }
+    &_content {
+        max-width: 94%;
+        @include md {
+            padding-left: 2.5rem;
+            max-width: unset;
+        }
+        .ttl {
+            @include md {
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}
+
+.business {
+    .ttl-headding-4 {
+        @include md {
+            margin-bottom: 1.6rem;
+        }
+    }
+    &_items {
+        width: 100%;
+        @include md {
+            width: calc(50% - 1.87rem);
+        }
+        +.business_items {
+            margin-top: 50px;
+            @include md {
+                margin-top: 0;
+            }
+        }
+        .ttl {
+            margin-top: 1.875rem;
+            @include md {
+                margin-top: 2.5rem;
+            }
+        }
+        &_content {
+            width: 88%;
+            margin: 0 auto;
+            @include md {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.top-btns {
+    position: relative;
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+    }
+    &:before {
+        left: 0;
+        background-color: $secondary;
+        border-radius: 0 20px 20px 0;
+        @include md {
+            border-radius: 0 30px 30px 0;
+        }
+
+    }
+    &:after {
+        right: 0;
+        background-color: $third;
+        border-radius: 20px 0 0 20px;
+        @include md {
+            border-radius: 30px 0 0 50px;
+        }
+    }
+}
+
+.top-btns {
+    padding: 30px 0;
+    margin: 1.875rem 0;
+    @include md {
+        padding: 55px 0;
+        margin: 2.5rem 0;
+    }
+}
+
+.top-btn {
+    width: 42%;
+    margin: 0 auto;
+    padding: 36px 5px 12px;
+    text-align: center;
+    border-radius: 57px;
+    @include md {
+        width: 45%;
+        padding: 100px 20px 64px;
+        border-radius: 100px;
+    }
+    @include lg {
+        width: 37.9%;
+        padding: 100px 30px 64px;
+        border-radius: 140px;
+    }
+    .ttl {
+        margin-bottom: 40px;
+        font-size: clamp(14px, 3.738vw, 16px);
+        @include md {
+            margin-bottom: 22px;
+            font-size: clamp(25px, 2.574vw, 35px);
+        }
+    }
+}
+
+.icon_arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(12px, 3.271vw, 14px);
+    @include md {
+        font-size: clamp(14px, 1.176vw, 16px);
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        position: relative;
+        width: 16px;
+        height: 16px;
+        margin-left: 0.4em;
+        @include md {
+            width: 52px;
+            height: 52px;
+        }
+    }
+}
+
+.icon-green {
+    &:after {
+        background: url(../image/icon_arrow1_sp.png) no-repeat left center/cover;
+        @include md {
+            background: url(../image/icon_arrow1_pc.png) no-repeat left center/cover;
+        }
+    }
+}
+
+.icon-pink {
+    &:after {
+        background: url(../image/icon_arrow2_sp.png) no-repeat left center/cover;
+        @include md {
+            background: url(../image/icon_arrow2_pc.png) no-repeat left center/cover;
+        }
+    }
+}
+
+.company {
+    .container {
+        width: 88%;
+        @include lg {
+            width: 100%;
+        }
+    }
+    &_contents {
+        width: 100%;
+        @include md {
+            width: 50%;
+        }
+    }
+}
+
+.googlemap {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    @include md {
+        border-radius: 61px;
+    }
+    iframe {
+        width: 100%;
+        height: calc(376/428*100vw);
+        border-radius: 40px;
+        z-index: -1;
+        @include md {
+            height: 765px;
+            border-radius: 61px;
+        }
+    }
+}

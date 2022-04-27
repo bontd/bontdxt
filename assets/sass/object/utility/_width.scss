@@ -1,0 +1,70 @@
+// width
+// ============================================
+
+// このサイト独自に設定した値
+.container {
+    width: 100%;
+    margin: 0 auto;
+    @include md {
+        width: 83.53%;
+        max-width: 1136px;
+    }
+
+    &-page {
+        width: calc(100% - 30px);
+    }
+}
+
+.w-82 {
+    width: $ColumnWidth82;
+}
+@include md {
+    .w-md-90-2 {
+        width: $ColumnWidth90;
+    }
+    .w-md-73 {
+        width: $ColumnWidth73;
+    }
+    .w-md-49 {
+        width: $ColumnWidth49;
+    }
+    .w-md-48 {  
+        width: $ColumnWidth48;
+    }
+    .w-md-47 {
+        width: $ColumnWidth47;
+    }
+    .mw-md-830 {
+        max-width: 830px;
+    }
+}
+
+
+
+// Bootstrap +　α
+// w-0　〜　w-100 を＋５づつ生成
+
+$width-min: 0;
+$width-max: 20;
+
+@for $i from $width-min through $width-max {
+    .w-#{$i * 5} {
+        width: #{$i * 5} + "%";
+    }
+    @include md {
+        .w-md-#{$i * 5} {
+            width: #{$i * 5} + "%";
+        }
+    }
+    @include lg {
+        .w-lg-#{$i * 5} {
+            width: #{$i * 5} + "%";
+        }
+    }
+}
+
+.col-md-6 {
+    @include md {
+        width: 50%;
+    }
+}

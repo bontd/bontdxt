@@ -1,0 +1,313 @@
+// flex
+// ============================================
+
+.d-flex {
+    display: flex;
+}
+
+
+
+// flex-wrap
+// ============================================
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+
+
+// flex-direction
+// ============================================
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+@include md {
+    .flex-md-row {
+        flex-direction: row;
+    }
+    
+    .flex-md-column {
+        flex-direction: column;
+    }
+}
+
+@include lg {
+    .flex-lg-row {
+        flex-direction: row;
+    }
+    
+    .flex-lg-column {
+        flex-direction: column;
+    }
+}
+
+
+
+// justify-content
+// ============================================
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+@include md {
+    .justify-content-md-between {
+        justify-content: space-between;
+    }
+    
+    .justify-content-md-center {
+        justify-content: center;
+    }
+
+    .justify-content-md-end {
+        justify-content: flex-end;
+    }
+    
+    .justify-content-md-around {
+        justify-content: space-around;
+    }
+}
+
+@include lg {
+    .justify-content-lg-between {
+        justify-content: space-between;
+    }
+    
+    .justify-content-lg-center {
+        justify-content: center;
+    }
+
+    .justify-content-md-end {
+        justify-content: flex-end;
+    }
+    
+    .justify-content-lg-around {
+        justify-content: space-around;
+    }
+}
+
+
+
+// align-items
+// ============================================
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+@include md {
+    .align-items-md-center {
+        align-items: center;
+    }
+
+    .align-items-md-start {
+        align-items: flex-start;
+    }
+    
+    .align-items-md-end {
+        align-items: flex-end;
+    }
+    
+    .align-items-md-stretch {
+        align-items: stretch;
+    }
+}
+
+@include lg {
+    .align-items-lg-center {
+        align-items: center;
+    }
+
+    .align-items-lg-start {
+        align-items: flex-start;
+    }
+    
+    .align-items-lg-end {
+        align-items: flex-end;
+    }
+    
+    .align-items-lg-stretch {
+        align-items: stretch;
+    }
+}
+
+
+
+// order
+// ============================================
+
+.order-0 {
+    order: 0;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.order-4 {
+    order: 4;
+}
+
+.order-5 {
+    order: 5;
+}
+
+.order-6 {
+    order: 6;
+}
+
+.order-7 {
+    order: 7;
+}
+
+.order-8 {
+    order: 8;
+}
+
+.order-9 {
+    order: 9;
+}
+
+
+.order-md-0 {
+    @include md {
+        order: 0;
+    }
+}
+
+@include md {
+    .order-md-1 {
+        order: 1;
+    }
+    
+    .order-md-2 {
+        order: 2;
+    }
+
+    .order-md-3 {
+        order: 3;
+    }
+
+    .order-md-4 {
+        order: 4;
+    }
+
+    .order-md-5 {
+        order: 5;
+    }
+
+    .order-md-6 {
+        order: 6;
+    }
+
+    .order-md-7 {
+        order: 7;
+    }
+
+    .order-md-8 {
+        order: 8;
+    }
+
+    .order-md-9 {
+        order: 9;
+    }
+}
+
+
+.order-lg-0 {
+    @include lg {
+        order: 0 !important;
+    }
+}
+    
+.order-lg-1 {
+    @include lg {
+        order: 1 !important;
+    }
+}
+    
+.order-lg-2 {
+    @include lg {
+        order: 2 !important;
+    }
+}
+
+.order-lg-3 {
+    @include lg {
+        order: 3 !important;
+    }
+}
+
+.order-lg-4 {
+    @include lg {
+        order: 4 !important;
+    }
+}
+
+.order-lg-5 {
+    @include lg {
+        order: 5 !important;
+    }
+}
+
+.order-lg-6 {
+    @include lg {
+        order: 6 !important;
+    }
+}
+
+.order-lg-7 {
+    @include lg {
+        order: 7 !important;
+    }
+}
+
+.order-lg-8 {
+    @include lg {
+        order: 8 !important;
+    }
+}
+
+.order-lg-9 {
+    @include lg {
+        order: 9 !important;
+    }
+}

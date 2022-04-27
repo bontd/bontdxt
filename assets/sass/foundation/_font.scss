@@ -1,0 +1,349 @@
+// Google Fonts
+// ============================================
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+// Base Font Family
+$base-serif: 'Zen Maru Gothic', sans-serif;
+
+// TsukuARdGothic
+$tsukuARdGothic-serif: 'FOT-TsukuARdGothic Std', sans-serif;
+.font-family-tsukuardgothic {
+    font-family: 'FOT-TsukuARdGothic Std', sans-serif;
+    font-weight: lighter;
+}
+
+// font-size
+// ============================================
+
+.font-size-base {
+    font-size: clamp(15px, 3.738vw, 16px);
+    @include md {
+        font-size: clamp(14px, 1.176vw, 16px);
+    }
+}
+
+.font-size-menu {
+    font-size: clamp(15px, 3.738vw, 16px);
+    @include md {
+        font-size: clamp(10px, 1.029vw, 14px);
+    }
+}
+
+.font-size-hedding-1 {
+    font-size: clamp(39px, 9.346vw, 40px);
+    @include md {
+        font-size: clamp(58px, 5.882vw, 80px);
+    }
+}
+
+.font-size-hedding-1_jp {
+    font-size: clamp(11px, 2.804vw, 12px);
+    @include md {
+        font-size: clamp(14px, 1.471vw, 20px);
+    }
+}
+
+.font-size-hedding-2 {
+    font-size: clamp(36px, 8.878vw, 38px);
+    @include md {
+        font-size: clamp(43px, 4.412vw, 60px);
+    }
+}
+
+.font-size-hedding-3_lp {
+    font-size: clamp(23px, 7.009vw, 30px);
+    @include md {
+        font-size: clamp(25px, 2.794vw, 38px);
+    }
+}
+
+.font-size-hedding-3 {
+    font-size: clamp(23px, 5.607vw, 24px);
+    @include md {
+        font-size: clamp(25px, 2.574vw, 35px);
+    }
+}
+
+.font-size-hedding-4 {
+    font-size: clamp(24px, 7.009vw, 30px);
+    @include md {
+        font-size: clamp(22px, 2.206vw, 30px);
+    }
+}
+
+.font-size-hedding-5 {
+    font-size: clamp(24px, 7.009vw, 30px);
+    @include md {
+        font-size: clamp(19px, 1.912vw, 26px);
+    }
+}
+
+.font-size-hedding-6 {
+    font-size: clamp(15px, 3.738vw, 16px);
+    @include md {
+        font-size: clamp(14px, 1.471vw, 20px);
+    }
+}
+
+.font-size-hedding-news {
+    font-size: clamp(21px, 5.373vw, 23px);
+    @include md {
+        font-size: clamp(18px, 1.838vw, 25px);
+    }
+}
+
+.font-size-phone {
+    font-size: clamp(33px, 8.477vw, 36px);
+    @include md {
+        font-size: clamp(32px, 2.941vw, 40px);
+    }
+}
+
+.font-size-copyright {
+    font-size: clamp(13px, 3.271vw, 14px);
+    @include md {
+        font-size: clamp(10px, 1.029vw, 14px);
+    }
+}
+
+.font-size-page {
+    font-size: clamp(29px, 7.009vw, 30px);
+    @include md {
+        font-size: clamp(24px, 2.206vw, 30px);
+    }
+}
+
+.font-size-firstview {
+    font-size: clamp(18px, 6.542vw, 28px);
+    @include md {
+        font-size: clamp(24px, 2.574vw, 35px);
+    }
+}
+
+.font-size-btn_l {
+    font-size: clamp(15px, 3.738vw, 16px);
+    @include md {
+        font-size: clamp(22px, 2.206vw, 30px);
+    }
+}
+
+.font-size-btn_m {
+    font-size: clamp(15px, 3.738vw, 16px);
+    @include md {
+        font-size: clamp(16px, 2.206vw, 18px);
+    }
+}
+
+.font-size-btn_s {
+    font-size: clamp(13px, 3.271vw, 14px);
+    @include md {
+        font-size: clamp(16px, 1.618vw, 22px);
+    }
+}
+
+.font-size-btn_xs {
+    font-size: clamp(14px, 3.505vw, 15px);
+    @include md {
+        font-size: clamp(12px, 1.176vw, 16px);
+    }
+}
+
+.font-size-top-btn {
+    font-size: clamp(18px, 4.439vw, 19px);
+    @include md {
+        font-size: clamp(25px, 2.574vw, 35px);
+    }
+}
+
+.font-size-top-btn-s {
+    font-size: clamp(13px, 3.271vw, 14px);
+    @include md {
+        font-size: clamp(12px, 1.176vw, 16px);
+    }
+}
+
+.font-size-btn_submit {
+    font-size: clamp(19px, 4.673vw, 20px);
+    @include md {
+        font-size: clamp(14px, 1.471vw, 20px);
+    }
+}
+
+.font-size-number {
+    font-size: clamp(49px, 11.682vw, 50px);
+    @include md {
+        font-size: clamp(36px, 3.676vw, 50px);
+    }
+}
+
+.font-size-flow {
+    font-size: clamp(24px, 5.841vw, 25px);
+    @include md {
+        font-size: clamp(18px, 1.838vw, 22px);
+    }
+}
+
+.font-size-contact {
+    font-size: clamp(15px, 3.738vw, 16px);
+    @include md {
+        font-size: clamp(12px, 1.176vw, 16px);
+    }
+}
+
+.font-size-download {
+    font-size: clamp(13px, 3.271vw, 14px);
+    @include md {
+        font-size: clamp(7px, 0.735vw, 10px);
+    }
+}
+
+.font-size-info {
+    font-size: clamp(15px, 3.738vw, 16px);
+    @include md {
+        font-size: clamp(13px, 1.324vw, 18px);
+    }
+}
+
+.font-size-support {
+    font-size: clamp(15px, 3.738vw, 16px);
+    @include md {
+        font-size: clamp(25px, 2.574vw, 35px);
+    }
+}
+
+.text-90p {
+    font-size: 90%;
+}
+
+.text-75p {
+    font-size: 75%;
+}
+
+
+
+// line-height
+// ============================================
+
+.line-height-100 {
+    line-height: 100%;
+}
+
+.line-height-130 {
+    line-height: 130%;
+}
+
+.line-height-140 {
+    line-height: 140%;
+}
+
+.line-height-150 {
+    line-height: 150%;
+}
+
+.line-height-160 {
+    line-height: 160%;
+}
+
+.line-height-170 {
+    line-height: 170%;
+}
+
+.line-height-180 {
+    line-height: 180%;
+}
+
+.line-height-base {
+    line-height: 187%;
+}
+
+
+
+// text-align
+// ============================================
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@include md {
+    .text-md-center {
+        text-align: center;
+    }
+    .text-md-left {
+        text-align: left;
+    }
+    .text-md-right {
+        text-align: right;
+    }
+}
+
+@include lg {
+    .text-lg-center {
+        text-align: center;
+    }
+    .text-lg-left {
+        text-align: left;
+    }
+    .text-lg-right {
+        text-align: right;
+    }
+}
+
+
+
+// text-align
+// ============================================
+
+.font-weight-bold {
+    font-weight: 600;
+}
+
+.font-weight-black {
+    font-weight: 900;
+}
+
+
+
+// letter-spacing
+// ============================================
+
+.letter-spacing-0 {
+    letter-spacing: 0;
+}
+
+.letter-spacing-10 {
+    letter-spacing: 0.1em;
+}
+
+.letter-spacing-15 {
+    letter-spacing: 0.15em;
+}
+
+.letter-spacing-20 {
+    letter-spacing: 0.2em;
+}
+
+
+
+// white-space
+// ============================================
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.text-normal {
+    white-space: normal;
+}

@@ -1,0 +1,23 @@
+// news list
+.news-list {
+    width: 100%;
+    &-item {
+        margin-bottom: 1.5rem;
+        @include md {
+            margin-bottom: 2.5rem;
+        }
+        &:last-child {
+            margin-bottom: 1.9rem;
+        }
+    }
+    &-ttl {
+        margin-bottom: 20px;
+        @include md {
+            margin-bottom: 24px;
+        }
+    }
+
+}
+.news_date {
+    margin-bottom: 20px;
+}

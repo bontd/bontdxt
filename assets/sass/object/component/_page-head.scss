@@ -1,0 +1,18 @@
+// page head
+// ============================================
+
+.pages {
+    padding-top: 85px;
+    @include md {
+        padding-top: 130px;
+    }
+    &-head {
+        padding: 15px 0 14px;
+        @include md {
+            padding: 3.125rem 0;
+        }
+    }
+    &-banner {
+        width: 100%;
+    }
+}

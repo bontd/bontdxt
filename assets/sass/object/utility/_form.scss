@@ -1,0 +1,97 @@
+// form
+// ==============
+.form-control {
+    width: 100%;
+    min-height: 50px;
+    padding:14px;
+    border: solid 2px $primary;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: $primary;
+    resize: vertical;
+    @include md {
+        min-height: 67px;
+        padding:22.5px 20px;
+    }
+    &::placeholder {
+        color: rgba($color: $primary, $alpha: .3);
+    }
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.required {
+    background-color: $danger;
+    font-size: 11px;
+    line-height: 1;
+    border-radius:5px;
+    color: $light;
+    padding: 4.5px 8px;
+    margin-left: 5px;
+    @include md {
+        font-size: 14px;
+    }
+}
+
+.form_policy {
+    width: 100%;
+    max-height: 200px;
+    border: solid 2px $primary;
+    border-radius: 5px;
+    overflow: auto;
+    padding: 22px 20px;
+    background-color: $white;
+}
+
+.c-radio {
+    width: auto;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        &:checked {
+            + span {
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    span {
+        line-height: 1.4;
+        padding: 0 0 0 30px;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            transition: .3s;
+
+        }
+        &:before {
+            width: 18px;
+            height: 18px;
+            border: solid 2px $primary;
+            left: 0;
+            background-color: $white;
+        }
+
+        &:after {
+            width: 14px;
+            height: 14px;
+            background-color: $primary;
+            left: 4px;
+            opacity: 0;
+        }
+    }
+}

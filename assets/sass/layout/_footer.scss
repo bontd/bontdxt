@@ -1,0 +1,94 @@
+.footer {
+    padding: 2.25rem 0 100px;
+    @include md {
+        padding: 2.25rem 0;
+    }
+    &_profile, &_contact, &_nav {
+        width: 100%;
+    }
+    &_profile {
+        @include md {
+            width: 27%;
+            &_inner {
+                width: 69.71%;
+            }
+        }
+    }
+    &_nav {
+        @include md {
+            width: 27%;
+        }
+    }
+    &_contact {
+        @include md {
+            width: 40%;
+        }
+    }
+    &_group_btn {
+        li {
+            width: calc(50% - 3px);
+            @include md {
+                width: auto;
+            }
+            + li {
+                margin-left: 6px;
+                @include md {
+                    margin-left: 10px;
+                }
+                @include lg {
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+        a {
+            min-width: 8.375rem;
+            @include md {
+                min-width: 90px;
+            }
+            @include lg {
+                min-width: 8.375rem;
+            }
+        }
+    }
+    &_logo {
+        width: 200px;
+        margin: 0 auto;
+        @include md {
+            width: auto;
+            margin:0;
+        }
+    }
+}
+
+.btn_contact_inner {
+    width: 9.06rem;
+    height: 9.06rem;
+    border-radius: 50%;
+    color: $base;
+    margin: .937rem auto;
+    a {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        line-height: 1.5;
+        &::before {
+            content: "";
+            display: inline-block;
+            position: relative;
+            width: 44px;
+            height: 30px;
+            line-height: 18px;
+            background: url(../image/icon_mail_sp.png) no-repeat center center/cover;
+            @include md {
+                display: block;
+                width: 40px;
+                height: 30px;
+                margin: 0 auto .625rem;
+                background: url(../image/icon_mail_pc.png) no-repeat center center/cover;
+            }
+        }
+    }
+}
