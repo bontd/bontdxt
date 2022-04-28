@@ -1,13 +1,16 @@
 // title
 // ============================================
 .ttl {
-    text-align: center;
     margin-bottom: 1.875rem;
     line-height: 1.5;
     position: relative;
     @include md {
         margin-bottom: 2.5rem;
     }
+}
+
+.ttl:not(.text-left) {
+    text-align: center;
 }
 
 .ttl-bg {

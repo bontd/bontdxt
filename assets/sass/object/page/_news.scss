@@ -1,13 +1,17 @@
 // news list
 .news-list {
     width: 100%;
+    margin-bottom: 1.875rem;
+    @include md {
+        margin-bottom: 2.5rem;
+    }
     &-item {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.875rem;
         @include md {
             margin-bottom: 2.5rem;
         }
         &:last-child {
-            margin-bottom: 1.9rem;
+            margin-bottom: 0;
         }
     }
     &-ttl {

@@ -6,7 +6,7 @@
     @include md {
         padding-top: 130px;
     }
-    &-head {
+    &-head:not(.pb-0) {
         padding: 15px 0 14px;
         @include md {
             padding: 3.125rem 0;

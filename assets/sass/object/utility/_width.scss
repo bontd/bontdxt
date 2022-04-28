@@ -18,6 +18,9 @@
 .w-82 {
     width: $ColumnWidth82;
 }
+.wf {
+    width: 100%;
+}
 @include md {
     .w-md-90-2 {
         width: $ColumnWidth90;
@@ -25,6 +28,7 @@
     .w-md-73 {
         width: $ColumnWidth73;
     }
+    
     .w-md-49 {
         width: $ColumnWidth49;
     }
@@ -34,8 +38,34 @@
     .w-md-47 {
         width: $ColumnWidth47;
     }
+    .w-md-45 {
+        width: $ColumnWidth45;
+    }
     .mw-md-830 {
         max-width: 830px;
+    }
+    .w-468-pc {
+        width: 468px;
+    }
+    // max width
+    .mw-md-60 {
+        max-width: $ColumnWidth60;
+    }
+    .mw-md-55 {
+        max-width: $ColumnWidth55;
+    }
+    .mw-md-50 {
+        max-width: $ColumnWidth50;
+    }
+    .mw-md-45 {
+        max-width: $ColumnWidth45;
+    }
+    .mw-md-40 {
+        max-width: $ColumnWidth40;
+    }
+    // min widht
+    .minw-md-40 {
+        min-width: $ColumnWidth40;
     }
 }
 
@@ -47,21 +77,21 @@
 $width-min: 0;
 $width-max: 20;
 
-@for $i from $width-min through $width-max {
-    .w-#{$i * 5} {
-        width: #{$i * 5} + "%";
-    }
-    @include md {
-        .w-md-#{$i * 5} {
-            width: #{$i * 5} + "%";
-        }
-    }
-    @include lg {
-        .w-lg-#{$i * 5} {
-            width: #{$i * 5} + "%";
-        }
-    }
-}
+// @for $i from $width-min through $width-max {
+//     .w-#{$i * 5} {
+//         width: #{$i * 5} + '%';
+//     }
+//     @include md {
+//         .w-md-#{$i * 5} {
+//             width: #{$i * 5} + "%";
+//         }
+//     }
+//     @include lg {
+//         .w-lg-#{$i * 5} {
+//             width: #{$i * 5} + "%";
+//         }
+//     }
+// }
 
 .col-md-6 {
     @include md {

@@ -16,398 +16,423 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-    <header class="d-flex align-items-center bg-primary">
-        <div class="header_inner mx-auto d-flex justify-content-between align-items-center">
+<body class="bg-fourth">
+    <header class="header" id="header">
+        <div class="header_container d-flex align-item align-items-center justify-content-between bg-light round-pill">
             <h1 class="header_logo">
                 <a href="index.html" class="d-block">
                     <picture>
                         <source media="(max-width:767px)" srcset="assets/image/header_logo_sp@2x.png">
-                        <source media="(min-width:768px)" srcset="assets/image/header_logo_pc.png 1x,assets/image/header_logo_pc@2x.png 2x">
-                        <img src="assets/image/header_logo_pc.png" alt="就労継続支援Ａ型事業所　payforword">
+                        <source media="(min-width:768px)" srcset="assets/image/header_logo_pc.png 1x, assets/image/header_logo_pc@2x.png 2x">
+                        <img src="assets/image/header_logo_pc.png" alt="payforward" loading="lazy">
                     </picture>
                 </a>
             </h1>
-            <div class="spbtn"><span></span><span></span><span></span></div>
-            <nav id="g-nav">
-                <ul class="d-flex flex-column flex-md-row align-items-md-center font-size-menu font-weight-bold">
-                    <li class="global_nav_text mb-1hq mb-md-0"><a href="index.html" class="d-block px-md-1">TOP</a></li>
-                    <li class="global_nav_text mb-1hq mb-md-0"><a href="index.html#about" class="d-block px-md-1">私たちについて</a></li>
-                    <li class="global_nav_text mb-1hq mb-md-0"><a href="index.html#work" class="d-block px-md-1">事業内容</a></li>
-                    <li class="global_nav_text mb-1hq mb-md-0 mr-md-1"><a href="index.html#company" class="d-block px-md-1">会社概要</a></li>
-                    <li class="global_nav_btn position-relative bg-light mb-1 mb-md-0 mr-md-1">
-                        <div>
-                            <a href="worker.html" class="d-block position-relative py-0h text-center line-height-150 bg-light">
-                                <span class="d-inline-block mr-0 mr-md-2 border-bottom-width-3 border-style-solid border-primary">ご利用</span><span class="d-lg-block text-nowrap mt-0q">したい方</span>
-                            </a>
-                        </div>
+            <nav class="header_nav" id="nav">
+                <ul class="d-flex flex-wrap align-items-md-center justify-content-center font-size-menu font-weight-bold">
+                    <li class="header_nav_item d-none d-lg-block order-lg-1">
+                        <a href="#" class="d-block px-md-0hq">TOP</a>
                     </li>
-                    <li class="global_nav_btn position-relative bg-light mb-1hq mb-md-0 mr-md-1h">
-                        <div>
-                            <a href="business.html" class="d-block position-relative py-0h text-center line-height-150 bg-light">
-                                <span class="d-inline-block text-nowrap border-bottom-width-3 border-style-solid border-secondary">お仕事依頼</span><span class="d-md-block text-nowrap mt-0q mr-md-1">したい方</span>
-                            </a>
-                        </div>
+                    <li class="header_nav_item mt-sp order-3 order-lg-2">
+                        <a href="#about" class="d-block px-md-0hq iconsp">私たちについて</a>
                     </li>
-                    <li class="mb-1hq mb-md-0"><a href="news.html">ニュース</a></li>
-                    <li class="mb-2 mb-md-0"><a href="contact.html#privacy">プライバシーポリシー</a></li>
-                    <li class="g-nav_contact mb-2 mb-md-0"><a href="contact.html" class="d-flex justify-content-center align-items-center position-relative bg-light round-pill px-2q py-1">お問い合わせ</a></li>
-                    <li class="position-relative">
-                        <ul class="header_sns position-relative d-flex justify-content-center">
-                            <li class="position-relative w-30">
-                                <a href="https://twitter.com/3payforward" class="d-block mx-auto bg-light round-circle" target="_blank" rel="noreferrer noopener">
-                                    <img src="assets/image/icon_twitter@2x.png" alt="Twitter">
-                                </a>
-                            </li>
-                            <li class="position-relative w-30">
-                                <a href="https://www.instagram.com/payforwardkoshigaya/" class="d-block mx-auto bg-light round-circle" target="_blank" rel="noreferrer noopener">
-                                    <img src="assets/image/icon_instagram@2x.png" alt="Instagram">
-                                </a>
-                            </li>
-                            <li class="position-relative w-30">
-                                <a href="https://www.facebook.com/payforward.koshigaya/" class="d-block mx-auto bg-light round-circle" target="_blank" rel="noreferrer noopener">
-                                    <img src="assets/image/icon_facebook@2x.png" alt="Facebook">
-                                </a>
-                            </li>
-                        </ul>
+                    <li class="header_nav_item order-4 order-lg-3">
+                        <a href="#business" class="d-block px-md-0hq iconsp">事業内容</a>
+                    </li>
+                    <li class="header_nav_item order-5 order-lg-4">
+                        <a href="#company" class="d-block px-md-0hq iconsp">会社概要</a>
+                    </li>
+                    <li class="header_nav_item order-6 order-lg-5 d-lg-none">
+                        <a href="#company" class="d-block px-md-0hq iconsp">ニュース</a>
+                    </li>
+                    <li class="header_nav_item order-7 order-lg-6 d-lg-none">
+                        <a href="#company" class="d-block px-md-0hq iconsp">プライバシーポリシー</a>
+                    </li>
+                    <li class="header_nav_item w50sp order-1 order-lg-7">
+                        <a href="#" class="d-block bg-secondary round-pill">ご利用<br/>したい方</a>
+                    </li>
+                    <li class="header_nav_item w50sp order-2 order-lg-8">
+                        <a href="#" class="d-block bg-third round-pill">お仕事依頼<br/>したい方</a>
+                    </li>
+                    <li class="header_nav_item w100sp order-9">
+                        <a href="#" class="link-contact">お問い合わせ</a>
+                    </li>
+                </ul>
+                <ul class="d-flex justify-content-center mb-1h d-lg-none">
+                    <li class="circle">
+                        <a href="https://twitter.com/3payforward" class="circle_inner d-block" target="_blank" rel="noreferrer noopener">
+                            <img src="assets/image/icon_twitter_pc.png" alt="Twitter" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="circle mx-1q">
+                        <a href="https://www.instagram.com/payforwardkoshigaya/" class="circle_inner d-block" target="_blank" rel="noreferrer noopener">
+                            <img src="assets/image/icon_instagram_pc.png" alt="Instagram" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="circle">
+                        <a href="https://www.facebook.com/payforward.koshigaya/" class="circle_inner d-block" target="_blank" rel="noreferrer noopener">
+                            <img src="assets/image/icon_facebook_pc.png" alt="Facebook" loading="lazy">
+                        </a>
                     </li>
                 </ul>
             </nav>
+            <button class="header_btnsp d-lg-none" id="btn-nav">
+                <svg width="22px" height="7px" viewBox="0 0 220 20" style="display: block;">
+                    <line x1="10" y1="20" x2="220" y2="20" stroke="#B97314" stroke-width="20" stroke-linecap="round" stroke-dasharray="0.1, 40"/>
+                </svg>
+                <svg width="22px" height="7px" viewBox="0 0 220 20" style="display: block;">
+                    <line x1="10" y1="20" x2="220" y2="20" stroke="#B97314" stroke-width="20" stroke-linecap="round" stroke-dasharray="0.1, 40"/>
+                </svg>
+                <svg width="22px" height="7px" viewBox="0 0 220 20" style="display: block;">
+                    <line x1="10" y1="20" x2="220" y2="20" stroke="#B97314" stroke-width="20" stroke-linecap="round" stroke-dasharray="0.1, 40"/>
+                </svg>
+            </button>
         </div>
     </header>
 
-    <div class="page-head_wrap bg-primary z-index-2">
-        <h1 class="page-head page-head_worker position-relative">
-            <span class="element-center font-size-page font-weight-bold text-white text-nowrap letter-spacing-15">ご利用したい方へ</span>
-        </h1>
-    </div>
-
     <!-- ご利用したい方へ -->
-    <section class="section bg-primary">
-        <div class="inner-width inner-bg">
-            <div class="z-index-2 pt-base pb-base d-flex flex-column flex-md-row justify-content-between">
-                <div class="worker_text mb-2 mb-md-0">
-                    <h2 class="hedding-2 mb-2">自分らしさを<br>見つけよう！</h2>
-                    <p class="line-height-base text-justify mb-4 mb-md-3">
-                        私たちは、宅配弁当の調理やパッキングなどを日々、行っています。「自分の得意なことが分からない」「できることから始めたい」そういった方の場合でも、同じ目線に立って、本来の得意な部分を伸ばすことに力を入れています。仲間として一緒に得意な部分を磨いていきましょう。
-                    </p>
-                    <h3 class="font-size-btn_submit text-left text-lg-center font-weight-bold mb-2">私たちと一緒に目指せること！</h3>
-                    <ul class="d-flex flex-column flex-md-row justify-content-between mb-0 font-weight-bold line-height-140">
-                        <li class="worker_aim bg-primary position-relative mb-1 mb-md-0">
-                            <span class="d-inline-block element-center"><span class="text-nowrap">飲食全般の<br class="d-none d-md-block">スキルが</span><br class="d-md-none"><span class="text-nowrap">身につきます！</span></span>
+    <section class="pages">
+        <div class="section pages-head pb-0">
+            <div class="container">
+                <h1 class="ttl">
+                    <span class="d-inline-block font-size-hedding-5 text-primary bg-light font-weight-bold line-height-130 border-w5 border-color-secondary round-pill px-md-3 py-0hq">ご利用したい方へ</span>
+                </h1>
+                <h2 class="ttl font-size-section-title text-green">自分らしさを見つけよう！</h2>
+                <p class="line-height-base text-justify">
+                    私たちは、宅配弁当の調理やパッキングなどを日々、行っています。「自分の得意なことが分からない」「できることから始めたい」そういった方の場合でも、同じ目線に立って、本来の得意な部分を伸ばすことに力を入れています。仲間として一緒に得意な部分を磨いていきましょう。
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="z-index-2 pd-xy-40 d-flex flex-column flex-md-row justify-content-between">
+                <div class="worker_img col-md-6">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="assets/image/worker/worker_sp@2x.png">
+                        <source media="(min-width:768px)" srcset="assets/image/worker/worker_pc.png 1x, assets/image/worker/worker_pc@2x.png 2x">
+                        <img src="assets/image/worker/worker_pc.png" alt="私たちと一緒に目指せること！">
+                    </picture>
+                </div>
+                <div class="worker_text col-md-6 mb-2 mb-md-0">
+                    <h3 class="font-size-hedding-4 text-left text-lg-center font-weight-bold mb-2 text-green">私たちと一緒に目指せること！</h3>
+                    <ul class="aim d-flex flex-column justify-content-between mb-0 font-weight-bold line-height-140">
+                        <li class="aim-item position-relative bg-light round-pill text-center">
+                            ご自身にあわせたステップアップができます！
                         </li>
-                        <li class="worker_aim bg-primary position-relative mb-1 mb-md-0">
-                            <span class="d-inline-block element-center"><span class="text-nowrap">ご自身のペースで<br class="d-none d-md-block">ステップアップ</span><br class="d-md-none"><span class="text-nowrap">できます！</span></span>
+                        <li class="aim-item position-relative bg-light round-pill text-center">
+                            飲食全般のスキルが身に付きます！
                         </li>
-                        <li class="worker_aim bg-primary position-relative mb-1 mb-md-0">
-                            <span class="d-inline-block element-center">あなたの<br class="d-none d-md-block">得意が<br class="d-md-none"><span class="text-nowrap">見つかります！</span>
+                        <li class="aim-item position-relative bg-light round-pill text-center">
+                            アットホームな環境で楽しく働けます！
                         </li>
                     </ul>
                 </div>
-                <div class="worker_img">
+            </div>
+        </div>
+    </section>
+
+    <!-- 事業内容 -->
+    <section class="section">
+        <div class="container">
+            <div class="d-flex justify-content-center"><h2 class="ttl ttl-headding-4 ttl-bg font-weight-bold">事業内容</h2></div>
+            <div class="d-flex flex-wrap mb-md-2h">
+                <div class="col-md-6">
+                    <h3 class="ttl font-size-section-title text-left text-green">お弁当製造・宅配</h3>
+                    <p class="line-height-base text-justify mb-md-2h">株式会社NSBでは、宅配弁当の調理や清掃などを行っています。未経験からはじめた利用者さんが多く集まっており、みなさんの障がい特性に応じた支援を心がけています。一緒に成長していきましょう。</p>
+                    <div class="d-flex flex-wrap">
+                        <h4 class="wf font-size-hedding-5 font-weight-bold mb-0h">スケジュール</h4>
+                        <div class="mw-md-60 minw-md-40 line-height-base">
+                            8：00 出勤 / 朝礼 / 作業<br/>
+                            10：00 コミュニケーションタイム （10分）<br/>
+                            11：00 昼食 / 昼休憩<br/>
+                            12：00 午後の作業開始<br/>
+                            13：30 作業終了 / 終礼
+                        </div>
+                        <p class="mw-md-40 line-height-base">※作業時間と作業内容については、ご相談ください！</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-right">
                     <picture>
-                        <source media="(max-width:767px)" srcset="assets/image/worker_sp@2x.jpg">
-                        <source media="(min-width:768px)" srcset="assets/image/worker_pc.jpg 1x, assets/image/worker_pc@2x.jpg 2x">
-                        <img src="assets/image/worker_pc.jpg" alt="ご利用者のイメージ写真">
+                        <source media="(max-width:767px)" srcset="assets/image/worker/work-1_sp@2x.png">
+                        <source media="(min-width:768px)" srcset="assets/image/worker/work-1_pc.png 1x, assets/image/worker/work-1_pc@2x.png 2x">
+                        <img src="assets/image/worker/work-1_pc.png" class="w-468-pc" alt="お弁当製造・宅配">
                     </picture>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- WORK -->
-    <section class="section bg-third">
-        <div class="inner-width inner-bg">
-            <div class="z-index-2 pt-base pb-base">
-                <h2 class="mb-2 mb-md-4 title text-third">WORK<span class="title_jp">事業内容</span></h2>
-                <ul class="pb-base">
-                    <li class="d-flex flex-column flex-md-row justify-content-between mb-4 mb-md-5">
-                        <div class="order-1 order-md-0 work_text">
-                            <h3 class="hedding-3 my-1h mt-md-0 text-center text-md-left">お弁当製造・宅配</h3>
-                            <p class="line-height-base text-justify mb-3">
-                                施設内就労では、北越谷にある事業所でお弁当の盛り付け、調理、清掃、パッキング、洗い物などを幅広く行っています。
-                            </p>
-                            <div class="border-width-8 border-style-solid border-third round-left-4rem round-right-md-3rem p-1q p-md-1h bg-light">
-                                <h4 class="mb-1 text-90p">■スケジュール(一例）</h4>
-                                <div class="mb-1h text-90p font-family-noto-sans letter-spacing-0 line-height-base">
-                                    08:00　出勤／朝礼／作業<br>11:00　昼食／休憩<br>12:00　午後の作業開始<br>13:00　コミュニケーションタイム（10分）<br>13:30　作業終了／終礼
-                                </div>
-                                <p class="text-75p line-height-140">※作業時間と作業内容については、ご相談ください！</p>
-                            </div>
+            <div class="d-flex flex-wrap">
+                <div class="col-md-6">
+                    <h3 class="ttl font-size-section-title text-left text-green">軽作業・事務作業</h3>
+                    <p class="line-height-base text-justify mb-md-2h">宅配弁当関連の業務のほか、清掃やチラシ折り、備品整理などの軽作業・事務作業も行っています。みなさんと一緒に同じ作業を行うことを心がけており、未経験の方でも取り組みやすいです。</p>
+                    <div class="d-flex flex-wrap">
+                        <h4 class="wf font-size-hedding-5 font-weight-bold mb-0h">スケジュール</h4>
+                        <div class="mw-md-60 minw-md-40 line-height-base">
+                            12：30 作業開始<br/>
+                            （昼食の時間で変動）<br/>
+                            14：00 作業終了 / 終礼
                         </div>
-                        <div class="work_img order-0 order-md-1">
-                            <picture>
-                                <source media="(max-width:767px)" srcset="assets/image/work-1_sp@2x.jpg" class="round-left-4 round-right-md-4">
-                                <source media="(min-width:768px)" srcset="assets/image/work-1_pc.jpg 1x, assets/image/work-1_pc@2x.jpg 2x" class="round-left-4 round-right-md-4">
-                                <img src="assets/image/work-1_pc.jpg" alt="お弁当製造・宅配の風景" class="round-left-4 round-right-md-3" loading="lazy">
-                            </picture>
-                        </div>
-                    </li>
-                    <li class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="order-1 work_text">
-                            <h3 class="hedding-3 my-1h mt-md-0 text-center text-md-left">食堂での調理・掃除</h3>
-                            <p class="line-height-base text-justify mb-3">
-                                施設外就労（三郷市）の食堂でお弁当の盛り付け、厨房での調理、食堂内の清掃、配膳、洗い物、接客を行っています。
-                            </p>
-                            <div class="border-width-8 border-style-solid border-third round-left-4rem round-right-md-4rem p-1q p-md-1h bg-light">
-                                <h4 class="mb-1 text-90p">■スケジュール(一例）</h4>
-                                <div class="mb-1h text-90p font-family-noto-sans letter-spacing-0 line-height-base">
-                                    09:00　出勤／開店準備<br>10:30　開店<br>12:30　昼食／休憩<br>13:30～15:00　（接客や閉店作業など）<br>完全土日祝日休み、勤務時間09:00～15:00
-                                </div>
-                                <p class="text-75p line-height-140">※作業時間と作業内容については、ご相談ください！</p>
-                            </div>
-                        </div>
-                        <div class="work_img order-0">
-                            <picture>
-                                <source media="(max-width:767px)" srcset="assets/image/work-2_sp@2x.jpg" class="round-left-4">
-                                <source media="(min-width:768px)" srcset="assets/image/work-2_pc.jpg 1x, assets/image/work-2_pc@2x.jpg 2x" class="round-left-4">
-                                <img src="assets/image/work-2_pc.jpg" alt="食堂での調理・掃除の風景" class="round-left-4" loading="lazy">
-                            </picture>
-                        </div>
-                    </li>
-                </ul>
-                <p class="mb-1h font-family-noto-sans font-size-hedding-news text-left text-md-center font-weight-bold line-height-140">
-                    相談だけでも大歓迎！<br class="d-md-none"><span class="text-nowrap">まずはお問い合わせください。</span>
-                </p>
-                <div class="contact_btn mx-lg-auto text-center">
-                    <a href="contact.html" class="d-flex justify-content-center align-items-center mx-auto py-1q font-family-noto-sans font-size-btn_m font-weight-bold bg-third round-pill">
-                        お問い合わせフォーム
+                        <p class="mw-md-40 line-height-base">※作業時間と作業内容については、ご相談ください！</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="assets/image/worker/work-2_sp@2x.png">
+                        <source media="(min-width:768px)" srcset="assets/image/worker/work-2_pc.png 1x, assets/image/worker/work-2_pc@2x.png 2x">
+                        <img src="assets/image/worker/work-2_pc.png" class="w-468-pc" alt="軽作業・事務作業">
+                    </picture>
+                </div>
+            </div>
+            <div class="worker-contact">
+                <p class="text-danger text-center font-size-hedding-4 line-height-130">見学だけでも大歓迎！<br/>まずはお問い合わせください。</p>
+                <div class="btn_contact_inner position-relative bg-light">
+                    <a href="contact.html" class="text-center font-weight-bold py-1 py-md-0">
+                        <span class="text-nowrap">お問い合わせ</span>
                     </a>
+                    <img src="assets/image/ico/ico-play.svg" class="ico" alt="お問い合わせ">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- MESSAGE -->
-    <section class="section bg-primary">
-        <div class="inner-width inner-bg">
-            <div class="z-index-2 pt-base pb-base">
-                <h2 class="mb-2 mb-md-4 title text-primary">MESSAGE<span class="title_jp line-height-140">サービス管理責任者<br>メッセージ</span></h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="w-md-47 order-1 order-md-0">
-                        <div>
-                            <h3 class="hedding-3 my-1hq mt-md-0 text-center text-md-left">笑顔で楽しくを応援したい</h3>
-                            <p class="line-height-base mb-3">
-                                福祉系の専門学校を卒業後、しばらくは入所施設で働いていました。まだ手探りな部分もありますが、社員を目指す利用者さんが増えているのは嬉しいです。様々な過去を持つ利用者さんが働いていますが、来て良かった！と言ってもらえるように全力で支援しますので、ぜひお越しください。
-                            </p>
-                            <div class="score bg-primary">
-                                <a href="/assets/files/score.pdf" target="_blank" rel="noreferrer noopener" class="d-block bg-light round-left-3 position-relative">
-                                    <div class="element-center pl-1 font-weight-bold">
-                                        <span class="d-inline-block pb-0q border-bottom-width-3 border-style-solid border-primary">スコア表</span>
-                                        <span class="d-inline-block position-relative mt-0h icon_download font-size-download d-flex align-items-center left-1em line-height-100 text-nowrap">ダウンロード</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-md-49 order-0 order-md-1">
-                        <picture>
-                            <source media="(max-width:767px)" srcset="assets/image/message_sp@2x.jpg">
-                            <source media="(min-width:768px)" srcset="assets/image/message_pc.jpg 1x, assets/image/message_pc@2x.jpg 2x">
-                            <img src="assets/image/message_pc.jpg" alt="サビ菅さんイメージ" loading="lazy">
-                        </picture>
-                    </div>
+    <!-- サービス管理責任者メッセージ -->
+    <section class="section">
+        <div class="container">
+            <div class="d-flex justify-content-center"><h2 class="ttl ttl-headding-4 ttl-bg font-weight-bold">サービス管理責任者<br/>メッセージ</h2></div>
+            <div class="d-flex align-items-center flex-column flex-md-row">
+                <figure class="about_thubmnail col-md-6">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="assets/image/worker/work-3_sp@2x.png">
+                        <source media="(min-width:768px)" srcset="assets/image/worker/work-3_pc.png 1x, assets/image/worker/work-3_pc@2x.png 2x">
+                        <img src="assets/image/worker/work-3_pc.png" alt="みなさんの笑顔が嬉しい">
+                    </picture>
+                </figure>
+                <div class="about_content col-md-6 font-weight-bold">
+                    <h3 class="ttl ttl-headding-3_lp text-green">みなさんの笑顔が嬉しい</h3>
+                    <p class="about_text line-height-base">以前は教習所で働いていましたが、生活相談員の仕事を紹介されたことがきっかけとなり、サービス管理責任者になりました。この事業所では、皆さん気兼ねなく楽しそうに働いていますし、成長した時の皆さんの笑顔が何よりも嬉しいです。私は一人ひとり丁寧に教えることを心がけていて、悩んだことがあれば気軽に相談してもらえるような環境づくりをもっとしていきたいです。<br/>未経験の方は不安もあるかもしれませんが、まずは見学に来てみてください。きっと楽しく働けます。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- STORY -->
-    <section class="section bg-third">
-        <div class="inner-width inner-bg">
-            <div class="z-index-2 pt-base pb-base">
-                <h2 class="pb-base title text-third">STORY<span class="title_jp">利用者さん　ストーリー</span></h2>
-                <ul class="d-flex flex-column flex-md-row justify-content-between">
-                    <li class="d-flex flex-column w-md-47 mb-2 mb-md-0">
-                        <div class="d-flex flex-row flex-md-column align-items-end align-items-md-center mb-1h mb-md-0">
-                            <h3 class="order-1 font-size-hedding-4 text-left text-md-center font-weight-bold py-md-1hq">利用者　Aさん</h3>
-                            <div class="border_story round-story-1 order-0 mr-1 mr-md-0 w-50 w-md-100">
-                                <picture>
-                                    <source media="(max-width:767px)" srcset="assets/image/story-1_sp@2x.png">
-                                    <source media="(min-width:768px)" srcset="assets/image/story-1_pc.png 1x,assets/image/story-1_pc@2x.png 2x">
-                                    <img src="assets/image/story-1_pc.png" alt="利用者　Aさんのイメージ写真" loading="lazy">
-                                </picture>
-                            </div>
-                        </div>
-                        <p class="line-height-base text-justify">最初にお会いした場で降ってきた雨を指して「これはお出迎えの雨ですよ！」とユーモアを言ってくれたサビ管さんの人柄が決め手でこの事業所を選びました。働いていて充実感がありますし、頑張れている自分に何よりも満足しています。</p>
-                    </li>
-                    <li class="d-flex flex-column w-md-47">
-                        <div class="d-flex flex-row flex-md-column align-items-end align-items-md-center mb-1h mb-md-0">
-                            <h3 class="order-1 font-size-hedding-4 text-left text-md-center font-weight-bold py-md-1hq">利用者　Bさん</h3>
-                            <div class="border_story round-story-2 order-0 mr-1 mr-md-0 w-50 w-md-100">
-                                <picture>
-                                    <source media="(max-width:767px)" srcset="assets/image/story-2_sp@2x.png">
-                                    <source media="(min-width:768px)" srcset="assets/image/story-2_pc.png 1x,assets/image/story-2_pc@2x.png 2x">
-                                    <img src="assets/image/story-2_pc.png" alt="利用者　Bさんのイメージ写真" loading="lazy">
-                                </picture>
-                            </div>
-                        </div>
-                        <p class="line-height-base text-justify">過去に働いていたスーパーや百貨店での調理経験を活かせると思って、payforwardに来ました。職場の雰囲気も和気あいあいとしていて、働くことがすごく楽しいです。調理もばっちりできているので、今後はここで一般就労の正社員になることを目指しています。</p>
-                    </li>
-                </ul>
+    <!-- 利用者さん ストーリー -->
+    <section class="section story">
+        <div class="container d-flex flex-wrap flex-md-nowrap position-relative">
+            <div class="d-flex justify-content-center"><h2 class="ttl ttl-headding-4 ttl-bg font-weight-bold">利用者さん ストーリ</h2></div>
+            <div class="d-flex flex-wrap story-group justify-content-between">
+                <div class="col-md-6">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="assets/image/worker/story-1_sp@2x.png">
+                        <source media="(min-width:768px)" srcset="assets/image/worker/story-1_pc.png 1x, assets/image/worker/story-1_pc@2x.png 2x">
+                        <img src="assets/image/worker/story-1_pc.png" alt="みなさんの笑顔が嬉しい">
+                    </picture>
+                    <div class="story-name text-center font-weight-bold">利用者　Aさん</div>
+                    <p class="line-height-base">他の就労支援施設で働いていた時に紹介されたのがきっかけです。まずは体験で働いてみたのですが、想像以上に楽しくて、この事業所に決めました。前は不安でほかの人とあまり話せませんでしたが、今は昼食時などで楽しく世間話ができるようになっています。<br/>今後は、もっと早くお弁当の盛り付けができるようになりたいです。</p>
+                </div>
+                <div class="col-md-6">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="assets/image/worker/story-2_sp@2x.png">
+                        <source media="(min-width:768px)" srcset="assets/image/worker/story-2_pc.png 1x, assets/image/worker/story-2_pc@2x.png 2x">
+                        <img src="assets/image/worker/story-2_pc.png" alt="みなさんの笑顔が嬉しい">
+                    </picture>
+                    <div class="story-name text-center font-weight-bold">利用者　Bさん</div>
+                    <p class="line-height-base">鴻巣市の職業安定所から紹介されたことがきっかけでした。はじめて体験に来た時から、いつもみなさんが真面目に向き合ってくれています。非常にアットホームな事業所で、働いていて、いつも楽しいです。<br/>今は食器を洗ったり、カップ詰めなどをしたりしていますが、今後はもっと手早くやりたいと思っています。</p>
+                </div>
+            </div>
+            <div class="btn_contact_inner position-relative bg-secondary">
+                <a href="contact.html" class="text-center font-weight-bold py-1 py-md-0">
+                    <span class="text-nowrap">スコア表<br/><small>ダウンロード</small></span>
+                </a>
+                <img src="assets/image/ico/ico-play.svg" class="ico" alt="お問い合わせ">
             </div>
         </div>
     </section>
 
-    <!-- RECRUIT -->
-    <section class="section bg-primary">
-        <div class="inner-width inner-bg">
-            <div class="z-index-2 pt-base pb-base">
-                <h2 class="hedding-3 pb-base">採用情報</h2>
-                <div class="border border-primary p-1 py-md-3 px-md-2h line-height-base d-flex flex-column flex-md-row justify-content-between bg-light">
-                    <div class="w-md-30">
-                        <h3 class="font-weight-bold mb-0h">【 お仕事内容 】</h3>
-                        <p class="pl-1 mb-1h">・お弁当の盛り付け<br>・事業所の厨房で調理<br>・清掃<br>・軽作業<br>・お弁当の仕込み<br>・ケータリングの盛り付け<br>・チラシ折り<br></p>
-                        <h3 class="font-weight-bold mb-0h">【 福利厚生 】</h3>
-                        <p class="pl-1 mb-1h">・雇用保険<br>・労災保険<br>・まかない付き（一部補助）</p>
-                        <h3 class="font-weight-bold mb-0h">【 通勤 】</h3>
-                        <p class="pl-1 mb-1h">・公共交通機関利用</p>
+    <!-- 採用情報 -->
+    <section class="section">
+        <div class="container">
+            <div class="employment border border-w6 border-color-secondary bg-light justify-content-between">
+                <div class="employment-left">
+                    <h2 class="ttl-headding-4 mb-md-0hq">採用情報</h2>
+                    <div class="d-flex line-height-base">
+                        <div class="mw-md-50">
+                            【お仕事内容】<br/>
+                            ・お弁当の盛り付け<br/>
+                            ・厨房での調理<br/>
+                            ・データ入力などの事務作業<br/>
+                            ・チラシ折りなどの軽作業<br/><br/>
+
+                            【福利厚生】<br/>
+                            ・まかない付き<br/><br/>
+
+                            【通勤】<br/>
+                            ・送迎あり、自家用車通勤応相談
+                        </div>
+                        <div class="mw-md-50">
+                            【勤務時間】<br/>
+                            ・シフト制（休憩含む）<br/>
+                            ・就労日数：月曜日～金曜日<br/>
+                            ・就労時間：7時30分から16時の間で4.5時間の勤務<br/><br/>
+
+                            【休日休暇】<br/>
+                            ・休日：土曜日、日曜日、祝日<br/><br/>
+
+                            【時給】<br/>
+                            ・928円～
+                        </div>
                     </div>
-                    <div class="w-md-30">
-                        <h3 class="font-weight-bold mb-0h">【 勤務時間 】</h3>
-                        <p class="pl-1 mb-1h">・シフト制（休憩時間　60分）<br>（シフト制　週5日程度）<br>・就労時間：お弁当作業：朝～昼、<br>利用者さん、4.5時間〜5.5時間、<br>(開始時間要相談/利用者さんに<br>合わせた作業ができます！)<br>※通院等配慮します。</p>
-                        <h3 class="font-weight-bold mb-0h">【 休日休暇 】</h3>
-                        <p class="pl-1 mb-1h">・週休2日制<br>・夏季休暇<br>・年末年始休暇</p>
-                        <h3 class="font-weight-bold mb-0h">【 時給 】</h3>
-                        <p class="pl-1 mb-1h">・956円～</p>
-                    </div>
-                    <div class="w-md-30">
-                        <h3 class="font-weight-bold mb-0h">◆交通面のメリット</h3>
-                        <p class="pl-1 mb-1h">事業所は、<br>JR「北越谷駅」より徒歩4分！<br>施設外就労（三郷市）の食堂調理は、<br>「三郷中央駅」よりバス8分！<br>
-                        </p>
-                        <h3 class="font-weight-bold mb-0h">◆ 専門の相談員が丁寧な対応</h3>
-                        <p class="pl-1 mb-1h">福祉スタッフが手厚くサポートしますので、初心者の方もブランクのある方も安心して働くことができます！</p>
-                        <h3 class="font-weight-bold mb-0h">◆ 専門の相談員が丁寧な対応</h3>
-                        <p class="pl-1 mb-1h">学歴不問！未経験OK！<br>障害者手帳、受給者証、<br>医師の診断書のいずれかをお持ちの方</p>
-                    </div>
+                </div>
+                <div class="employment-right">
+                    <ul class="employment-list line-height-base">
+                        <li class="employment-list-item">
+                            <h3 class="font-size-hedding-6 text-green">交通面のメリット</h3>
+                            <p>最寄り駅までバスで送迎しています。<br/>駐車場がありますので、相談いただければ車や自転車での通勤もできます。</p>
+                        </li>
+                        <li class="employment-list-item">
+                            <h3 class="font-size-hedding-6 text-green">専門の相談員について</h3>
+                            <p>手厚くサポートしますので、初心者の方もブランクのある方も安心して働くことができます！</p>
+                        </li>
+                        <li class="employment-list-item">
+                            <h3 class="font-size-hedding-6 text-green">学歴不問！未経験OK！</h3>
+                            <p>障害者手帳、受給者証、医師の診断書いずれかをお持ちの方、お待ちしてます。</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FLOW -->
-    <section class="section bg-primary">
-        <div class="inner-width inner-bg">
-            <div class="z-index-2 pt-base pb-base">
-                <h2 class="hedding-3 pb-base">ご利用までの流れ</h2>
-                <ul class="flow_list d-flex flex-column flex-md-row justify-content-between align-items-stretch">
-                    <li class="border border-primary round-right-4rem bg-light position-relative p-1 mb-2h mb-md-0">
-                        <div class="d-flex align-items-center mb-1">
-                            <span class="d-inline-block mr-1 font-family-oswald font-size-number">1</span>
-                            <h3 class="d-inline-block font-size-flow font-weight-bold">お問い合わせ</h3>
-                        </div>
-                        <p class="text-justify line-height-base">
-                            弊社までご連絡ください。日程を調整させていただきます。
-                        </p>
-                    </li>
-                    <li class="border border-primary round-right-4rem bg-light position-relative p-1 mb-2h mb-md-0">
-                        <div class="d-flex align-items-center mb-1">
-                            <span class="d-inline-block mr-1 font-family-oswald font-size-number">2</span>
-                            <h3 class="d-inline-block font-size-flow font-weight-bold">見学（体験）</h3>
-                        </div>
-                        <p class="text-justify line-height-base">
-                            作業所の雰囲気やスタッフの対応などをご覧ください。
-                        </p>
-                    </li>
-                    <li class="border border-primary round-right-4rem bg-light position-relative p-1 mb-2h mb-md-0">
-                        <div class="d-flex align-items-center mb-1">
-                            <span class="d-inline-block mr-1 font-family-oswald font-size-number">3</span>
-                            <h3 class="d-inline-block font-size-flow font-weight-bold">採用面接</h3>
-                        </div>
-                        <p class="text-justify line-height-base">
-                            当日は、以下をご持参ください。<br>1.ハローワークの紹介状<br>2.履歴書<br>3.障害手帳
-                        </p>
-                    </li>
-                    <li class="border border-primary round-right-4rem bg-light position-relative p-1 mb-2h mb-md-0">
-                        <div class="d-flex align-items-center mb-1">
-                            <span class="d-inline-block mr-1 font-family-oswald font-size-number">4</span>
-                            <h3 class="d-inline-block font-size-flow font-weight-bold">利用開始</h3>
-                        </div>
-                        <p class="text-justify line-height-base">
-                            受給者証給付後、雇用契約書・利用契約書、重要事項説明書の説明と締結をします。
-                        </p>
-                    </li>
-                </ul>
-            </div>
+    <!-- ご利用までの流れ -->
+    <section class="section mb-md-2h">
+        <div class="container position-relative">
+            <div class="d-flex justify-content-center"><h2 class="ttl ttl-headding-4 ttl-bg font-weight-bold">ご利用までの流れ</h2></div>
+            <ul class="flow_list d-flex flex-column flex-md-row justify-content-between align-items-stretch">
+                <li class="border border-secondary border-w6 bg-light position-relative p-1h">
+                    <div class="d-flex align-items-center flex-column mb-1">
+                        <span class="d-inline-block font-size-flow mb-0h">1.</span>
+                        <h3 class="d-inline-block font-size-flow font-weight-bold">お問い合わせ</h3>
+                    </div>
+                    <p class="text-justify line-height-base">
+                        弊社までご連絡ください。日程を調整させていただきます。
+                    </p>
+                </li>
+                <li class="border border-secondary border-w6 bg-light position-relative p-1h">
+                    <div class="d-flex align-items-center flex-column mb-1">
+                        <span class="d-inline-block font-size-flow mb-0h">2.</span>
+                        <h3 class="d-inline-block font-size-flow font-weight-bold">見学（体験）</h3>
+                    </div>
+                    <p class="text-justify line-height-base">
+                        作業所の雰囲気や<br/>スタッフの対応などをご覧ください。
+                    </p>
+                </li>
+                <li class="border border-secondary border-w6 bg-light position-relative p-1h">
+                    <div class="d-flex align-items-center flex-column mb-1">
+                        <span class="d-inline-block font-size-flow mb-0h">3.</span>
+                        <h3 class="d-inline-block font-size-flow font-weight-bold">採用面接</h3>
+                    </div>
+                    <p class="text-justify line-height-base">
+                        当日は、<br/>
+                        以下をご持参ください。<br/>
+                        ①ハローワークの紹介状<br/>
+                        ②履歴書<br/>
+                        ③障害手帳
+                    </p>
+                </li>
+                <li class="border border-secondary border-w6 bg-light position-relative p-1h">
+                    <div class="d-flex align-items-center flex-column mb-1">
+                        <span class="d-inline-block font-size-flow mb-0h">4.</span>
+                        <h3 class="d-inline-block font-size-flow font-weight-bold">利用開始</h3>
+                    </div>
+                    <p class="text-justify line-height-base">
+                        受給者証給付後、<br/>
+                        ・雇用契約書<br/>
+                        ・利用契約書<br/>
+                        ・重要事項説明書<br/>
+                        の説明と締結をします。
+                    </p>
+                </li>
+            </ul>
         </div>
     </section>
 
     <!-- INFO -->
-    <section class="section bg-third">
-        <div class="inner-width inner-bg">
-            <div class="z-index-2 pt-base pb-base px-1h border border-third bg-light info_wrap d-flex flex-column flex-md-row justify-content-between">
-                <div>
-                    <h2 class="font-size-top-btn font-family-noto-sans line-height-150 font-weight-bold mb-1">相談だけでも大歓迎！<br>まずはお問い合わせください！</h2>
-                    <p class="line-height-base text-justify mb-2">「就職したいけど自信がない……」「生活のリズムを整えたい…」<br>一人一人のステップに合わせて、ベストな支援を行っています！</p>
-                    <div class="info_btn mb-2 mb-md-0">
-                        <a href="contact.html" class="d-block mx-auto bg-third round-pill font-size-info text-center d-flex justify-content-center align-items-center line-height-100 font-weight-bold">お問い合わせフォーム</a>
-                    </div>
-                </div>
+    <section class="section bg-secondary">
+        <div class="container">
+            <div class="z-index-2 info_wrap d-flex flex-column flex-md-row justify-content-between">
                 <div>
                     <picture>
-                        <source media="(max-width:767px)" srcset="assets/image/info_sp@2x.jpg">
-                        <source media="(min-width:768px)" srcset="assets/image/info_pc.jpg 1x,assets/image/info_pc@2x.jpg 2x">
-                        <img src="assets/image/info_pc.jpg" alt="一人一人に合わせたベストな支援" loading="lazy">
+                        <source media="(max-width:767px)" srcset="assets/image/worker/info_sp@2x.png">
+                        <source media="(min-width:768px)" srcset="assets/image/worker/info_pc.png 1x,assets/image/worker/info_pc@2x.png 2x">
+                        <img src="assets/image/worker/info_pc.png" alt="一人一人に合わせたベストな支援" loading="lazy">
                     </picture>
+                </div>
+                <div>
+                    <h2 class="font-size-top-btn text-green-dark font-family-noto-sans line-height-150 font-weight-bold mb-1">相談だけでも大歓迎！<br>まずはお問い合わせください！</h2>
+                    <p class="line-height-base text-justify mb-2">
+                        「就職したいけど自信がない……」<br/>
+                        「生活のリズムを整えたい…」<br/>
+                        一人一人のステップに合わせて、<br/>
+                        ベストな支援を行っています！
+                    </p>
+                    <div class="btn_contact_inner position-relative bg-light">
+                        <a href="contact.html" class="text-center font-weight-bold py-1 py-md-0">
+                            <span class="text-nowrap">スコア表<br/><small>ダウンロード</small></span>
+                        </a>
+                        <img src="assets/image/ico/ico-play.svg" class="ico" alt="お問い合わせ">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- パンクズリスト -->
-    <section class="section bg-third">
-        <div class="inner-width inner-bg">
-            <div class="z-index-2 pt-base pb-base">
-                <ul class="breadcrumb d-flex justify-content-center text-90p">
-                    <li class="d-fle align-items-center"><a href="index.html">TOP</a></li>
-                    <li>ご利用したい方</li>
-                </ul>
-            </div>
-        </div>
+    <section class="section bg-secondary">
+        <ul class="breadcrumb d-flex justify-content-center text-90p">
+            <li class="d-fle align-items-center"><a href="index.html">Top </a></li>
+            <li><span class="breadcrumb-line">/</span>ご利用したい方</li>
+        </ul>
     </section>
 
     <footer class="footer bg-primary">
-        <div class="inner-width">
+        <div class="container">
             <div class="footer_layout d-flex flex-column flex-md-row justify-content-between">
-                <div class="footer_contact order-md-1">
-                    <p class="font-size-hedding-6 text-center mb-0hq">お気軽にお問い合わせください</p>
-                    <p class="font-size-phone icon_phone mb-1 font-family-noto-sans font-weight-bold text-nowrap">048-967-5520</p>
-                    <p class="text-center mb-2 letter-spacing-0">営業時間：9:30〜16:00（平日のみ可能）</p>
-                    <div class="btn_contact mx-auto mb-3 mb-md-0">
-                        <div class="btn_contact_inner position-relative w-100 bg-light">
-                            <a href="contact.html" class="font-size-contact text-center font-family-noto-sans font-weight-bold py-1 py-md-0">
-                                <span class="text-nowrap">お問い合わせ</span><br class="d-none d-md-block">フォーム
+                <div class="footer_contact order-md-1 text-light">
+                    <p class="text-center mb-0hq">お気軽にご相談ください</p>
+                    <div class="btn_contact mx-auto mb-1 mb-md-3 mb-md-0">
+                        <div class="btn_contact_inner position-relative bg-light">
+                            <a href="contact.html" class="font-size-contact text-center font-weight-bold py-1 py-md-0">
+                                <span class="text-nowrap">お問い合わせ</span><br class="d-none d-md-block"><span class="d-none d-md-block">フォーム</span>
                             </a>
                         </div>
                     </div>
+                    <p class="font-size-phone icon_phone mb-1 font-weight-bold text-nowrap">048-967-5520</p>
+                    <p class="text-center mb-2 letter-spacing-0">営業時間：9:30〜16:00（平日のみ可能）</p>
+                    
                 </div>
                 <div class="footer_nav order-md-2">
-                    <div class="footer_nav_inner ml-auto font-family-noto-sans font-weight-bold line-height-130">
-                        <ul class="font-size-menu">
+                    <div class="footer_nav_inner ml-auto font-weight-bold line-height-130">
+                        <ul class="footer_group_btn font-size-menu d-flex justify-content-md-end">
                             <li class="mb-1">
-                                <a href="worker.html" class="d-block w-100 py-1 bg-light text-center">
-                                    <span class="d-inline-block border-bottom-width-3 border-style-solid border-primary">ご利用</span>したい方
+                                <a href="worker.html" class="d-block w-100 py-1 bg-secondary text-center round-pill">
+                                    ご利用<br/>したい方
                                 </a>
                             </li>
                             <li class="mb-2">
-                                <a href="business.html" class="d-block w-100 py-1 bg-light text-center">
-                                    <span class="d-inline-block border-bottom-width-3 border-style-solid border-secondary">お仕事依頼</span>したい方
+                                <a href="business.html" class="d-block w-100 py-1 bg-third text-center round-pill">
+                                    お仕事依頼<br/>したい方
                                 </a>
                             </li>
                         </ul>
-                        <ul class="mb-1 mb-md-0 font-family-noto-sans font-size-menu text-center text-md-right font-weight-bold line-height-100">
+                        <ul class="mb-1 mb-md-0 font-size-menu text-center text-md-right font-weight-bold line-height-100 text-light">
                             <li class="mb-1q"><a href="index.html">TOP</a></li>
-                            <li class="mb-1q"><a href="index.html#work">事業内容</a></li>
                             <li class="mb-1q"><a href="index.html#about">私たちについて</a></li>
+                            <li class="mb-1q"><a href="index.html#business">事業内容</a></li>
                             <li class="mb-1q"><a href="index.html#company">会社概要</a></li>
-                            <li class="mb-1q"><a href="news.html">ニュース</a></li>
-                            <li><a href="contact.html#privacy">プライバシーポリシー</a></li>
+                            <li class="mb-1q"><a href="#">ニュース</a></li>
+                            <li><a href="#">プライバシーポリシー</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="footer_profile order-md-0">
+                <div class="footer_profile order-md-0 mt-3 mt-md-0 text-light">
                     <div class="footer_profile_inner text-center">
-                        <div>
+                        <div class="footer_logo">
                             <a href="index.html">
                                 <picture>
                                     <source media="(max-width:767px)" srcset="assets/image/footer_logo_sp@2x.png">
@@ -417,33 +442,31 @@
                             </a>
                         </div>
                         <p class="d-inline-block mx-auto mb-2 mb-md-0 font-size-menu text-center text-md-left line-height-140">
-                            <span class="d-block mx-auto">〒343-0026<br>埼玉県越谷市北越谷4-14-2 1F</span>
+                            <span class="d-block mx-auto line-height-base">〒343-0026<br>埼玉県越谷市北越谷4-14-2 1F</span>
                         </p>
                     </div>
                 </div>
             </div>
-            <ul class="d-flex justify-content-center mb-1h">
+            <ul class="d-flex justify-content-center mb-3 mb-md-1h">
                 <li class="circle">
                     <a href="https://twitter.com/3payforward" class="circle_inner d-block" target="_blank" rel="noreferrer noopener">
-                        <img src="assets/image/icon_twitter@2x.png" alt="Twitter" loading="lazy">
+                        <img src="assets/image/icon_twitter_pc.png" alt="Twitter" loading="lazy">
                     </a>
                 </li>
                 <li class="circle mx-1q">
                     <a href="https://www.instagram.com/payforwardkoshigaya/" class="circle_inner d-block" target="_blank" rel="noreferrer noopener">
-                        <img src="assets/image/icon_instagram@2x.png" alt="Instagram" loading="lazy">
+                        <img src="assets/image/icon_instagram_pc.png" alt="Instagram" loading="lazy">
                     </a>
                 </li>
                 <li class="circle">
                     <a href="https://www.facebook.com/payforward.koshigaya/" class="circle_inner d-block" target="_blank" rel="noreferrer noopener">
-                        <img src="assets/image/icon_facebook@2x.png" alt="Facebook" loading="lazy">
+                        <img src="assets/image/icon_facebook_pc.png" alt="Facebook" loading="lazy">
                     </a>
                 </li>
             </ul>
-            <p class="text-center"><small class="font-size-copyright">&copy; 2022 payforward inc.</small></p>
+            <p class="text-center text-light"><small>&copy; 2022 payforward inc.</small></p>
         </div>
     </footer>
-
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/common.js"></script>
 </body>
 </html>
