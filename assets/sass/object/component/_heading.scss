@@ -14,22 +14,24 @@
 }
 
 .ttl-bg {
-    padding: 0 calc(70/428*100vw);
+    padding: 0 calc(50/428*100vw);
     @include md {
         padding: 0 70px;
     }
     &::before, &:after {
         content: '';
         position: absolute;
-        top: 8px;
+        top: 50%;
         width: 56.96px;
         height: 46.98px;
         background-repeat: no-repeat;
         background-size: 100%;
+        transform: translateY(-50%);
         @include md {
             width: 4.18rem;
             height: 3.5rem;
             top: 2px;
+            transform: translateY(0);
         }
     }
     &:before {
@@ -56,4 +58,11 @@
 
 .ttl-headding-5 {
     @extend .font-size-hedding-5;
+}
+
+.hedding-3 {
+    font-size: clamp(25px, 8.178vw, 35px);
+    @include md {
+        font-size: clamp(32px, 2.941vw, 40px);
+    }
 }

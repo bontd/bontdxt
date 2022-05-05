@@ -65,7 +65,7 @@
     height: 9.06rem;
     border-radius: 50%;
     color: $base;
-    margin: .937rem auto;
+    margin: 0 auto;
     a {
         display: block;
         position: absolute;
@@ -92,9 +92,75 @@
         }
     }
     .ico {
-        width: 51.55px;
+        width: 43px;
         position: absolute;
         bottom: -10px;
-        left: -25px;
+        left: 0;
+        @include md {
+            width: 51.55px;
+            left: -25px;
+        }
+    }
+}
+
+.worker-btn-contact:not(.no-ico) {
+    width: 75%;
+    height: 62px;
+    position: relative;
+    border-radius: 60px;
+    @include md {
+        width: 138px;
+        height: 138px;
+        border-radius: 50%;
+        &::before, &:after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 56.96px;
+            height: 46.98px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            @include md {
+                width: 4.18rem;
+                height: 3.5rem;
+                top: 45%;
+                transform: translateY(-50%);
+            }
+        }
+        &:before {
+            left: -120px;
+            background-image: url('../image/icon_circle1_left_pc@2x.png');
+        }
+        &:after {
+            right: -120px;
+            background-image: url('../image/icon_circle1_right_pc@2x.png');
+        }
+
+        &.ico-2 {
+            &:before {
+                width: 93px;
+                height: 96px;
+                left: -130px;
+                background-image: url('../image/icon_circle1_left.svg');
+            }
+            &:after {
+                width: 93px;
+                height: 96px;
+                right: -120px;
+                background-image: url('../image/icon_circle1_right.svg');
+            }
+        }
+    }
+    a {
+        font-size: clamp(14px, 3.738vw, 16px);
+        @include md {
+            font-size: clamp(10px, 0.956vw, 13px);
+        }
+        @include mdn {
+            &::before {
+                width: 20px;
+                height: 14px;
+            }
+        }
     }
 }

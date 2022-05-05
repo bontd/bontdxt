@@ -1,52 +1,134 @@
 // worker
 // ===============================
+.workers {
+    .pages-head {
+        @include mdn {
+            padding-top: 20px;
+            h1.ttl {
+                margin-bottom: 20px;
+            }
+        }
+    }   
+}
 .worker_text {
-    padding: 0 10px 0 50px;
+    
+    @include md {
+        padding: 0 10px 0 44px;
+    }
 }
 .aim {
-    width: 100%;
+    width: 82.8%;
+    margin: 0 auto;
+    @include md {
+        width: 100%;
+    }
     &-item {
         display: inline-block;
         margin-bottom: 20px;
-        font-size: clamp(18px, 1.471vw, 20px);
-        padding: 39px 20px;
+        font-size: clamp(14px, 3.738vw, 16px);
+        padding: 20px 10px;
+        z-index: 1;
+        @include md {
+            font-size: clamp(18px, 1.471vw, 20px);
+            padding: 37.5px 20px;
+        }
         &:last-child {
             margin-bottom: 0;
+        }
+    }
+
+    .ico-right {
+        &:after {
+            content: '';
+            position: absolute;
+            position: absolute;
+            width: 56.96px;
+            height: 46.98px;
+            right: -10%;
+            bottom: 0;
+            background-image: url(../image/icon_circle1_right_pc@2x.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            z-index: -1;
+            @include md {
+                width: 67px;
+                height: 56px;
+                bottom: -15px;
+                right: -10px;
+            }
+        }
+        &-2 {
+            &:after {
+                content: '';
+                position: absolute;
+                position: absolute;
+                width: 92px;
+                height: 70px;
+                right: -10%;
+                bottom: -15px;
+                background-image: url(../image/icon_circle_right_sp.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: -1;
+                @include md {
+                    width: 93px;
+                    height: 96px;
+                    bottom: -20px;
+                    right: -15px;
+                    background-image: url(../image/icon_circle_right.svg);
+                }
+                
+            }
+        }
+    }
+
+    .ico-left {
+        &:after {
+            content: '';
+            position: absolute;
+            position: absolute;
+            width: 56.96px;
+            height: 46.98px;
+            left: -10%;
+            bottom: 0;
+            background-image: url(../image/icon_circle1_left_pc@2x.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            z-index: -1;
+            @include md {
+                width: 67px;
+                height: 56px;
+                bottom: -15px;
+                left: -10px;
+            }
         }
     }
 }
 
 .worker-contact {
-    max-width: 434px;
-    .btn_contact_inner {
-        width: 138px;
-        height: 138px;
-        position: relative;
-        &::before, &:after {
-            content: '';
-            position: absolute;
-            top: 8px;
-            width: 56.96px;
-            height: 46.98px;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            @include md {
-                width: 4.18rem;
-                height: 3.5rem;
-                top: 45%;
-                transform: translateY(-50%);
+    margin-top: 60px;
+    @include md {
+        max-width: 434px;
+        margin-top: 0;
+    }
+}
+
+.service {
+    .ttl {
+        @include mdn {
+            padding-left: 0;
+            padding-right: 0;
+            &:before, &:after {
+                top: 30px;
             }
-        }
-        &:before {
-            left: -120px;
-            background-image: url('../image/icon_circle1_left_pc@2x.png');
-        }
-        &:after {
-            right: -120px;
-            background-image: url('../image/icon_circle1_right_pc@2x.png');
-        }
-        a {
-            font-size: clamp(10px, 0.956vw, 13px);
+
+            &:before {
+                left: - 30px;
+            }
+
+            &:after {
+                right: - 30px;
+            }
         }
     }
 }
@@ -67,32 +149,48 @@
             width: calc(50% - 1.25rem);
         }
     }
-    &-name {
-        margin: 1.25rem 0;
-        font-size: clamp(18px, 1.471vw, 20px);
-    }
-
-    .btn_contact_inner {
-        width: 188px;
-        height: 188px;
+    &-picture {
+        width: 50%;
+        display: inline-block;
         @include md {
+            width: 100%;
+        }
+    }
+    &-name {
+        width: 50%;
+        margin: 0;
+        @include md {
+            width: 100%;
+            margin: 1.25rem 0;
+            font-size: clamp(18px, 1.471vw, 20px);
+        }
+    }
+    
+    .btn_contact_inner {
+        margin: 0;
+        @include md {
+            width: 188px;
+            height: 188px;
             position: absolute;
             top: 200px;
             left: 60px;
+            .ico {
+                width: 70px;
+                left: -30px;
+            }
         }
         a {
-            font-size: 35px;
-            line-height: 1;
+            @include md {
+                font-size: 35px;
+                line-height: 1;
+                small {
+                    font-size: 19px;
+                }
+            }
             &::before {
                 display: none;
             }
-            small {
-                font-size: 19px;
-            }
-        }
-        .ico {
-            width: 70px;
-            left: -30px;
+            
         }
     }
 }
@@ -101,8 +199,11 @@
 .employment {
     display: flex;
     flex-wrap: wrap;
-    padding: 80px;
+    padding: 30px 40px;
     border-radius: 30px;
+    @include md {
+        padding: 80px;
+    }
     &-left {
         margin-bottom: 20px;
         @include lg {
@@ -120,10 +221,12 @@
     &-list {
         &-item {
             width: 100%;
-            min-height: 170px;
             background-color: #F7FAF7;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             padding: 10px 20px;
+            @include md {
+                margin-bottom: 20px;
+            }
             &:last-child {
                 margin-bottom: 0;
             }
@@ -136,32 +239,68 @@
         width: 100%;
         min-height: 14em;
         border-radius: 30px;
+        margin-bottom: 60px;
         @include md {
             width: calc(100% / 4 - 16.5px);
             min-width: 0;
             min-height: auto;
+            margin-bottom: 0;
         }
-        &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 50%;
-            bottom: -2.2rem;
-            transform: translateX(-50%);
-            z-index: 2;
-            width: 1.5rem;
-            height: 1.5rem;
-            margin: 0 0.6rem;
-            background: url(../image/icon_arrow-bottom@2x.png) no-repeat center center/cover;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:not(:last-child) {
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: -60px;
+                left: 50%;
+                z-index: 2;
+                border: solid 10px transparent;
+                border-top: solid 15px $primary;
+                transform: translateX(-50%);
+                @include md {
+                    bottom: 50%;
+                    left: calc(100% + 10px);
+                    border: solid 10px transparent;
+                    border-left: solid 15px $primary;
+                    transform: translateY(50%);
+                }
+
+            }
+        }
+    }
+}
+
+// info
+.info {
+    &-left {
+        width: 100%;
+        margin: 0 auto;
+        @include md {
+            width: 40%;
+        }
+    }
+
+    &-right {
+        @include md {
+            width: 60%;
+            padding-left: 2.5rem;
+        }
+        .btn_contact_inner {
+            position: relative;
             @include md {
-                width: 1.375rem;
-                height: 1.375rem;
-                margin: 0;
-                top: 50%;
-                right: -20%;
-                bottom: auto;
-                left: auto;
-                transform: translateY(-50%) rotate(-90deg);
+                width: 188px;
+                height: 188px;
+                position: absolute;
+                right: 0;
+                bottom: -4rem;
+                font-size: 20px;
+            
+                .ico {
+                    width: 70px;
+                }
             }
         }
     }

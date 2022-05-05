@@ -15,7 +15,7 @@
     }
 }
 
-.pd-xy-40 {
+.pd-y-40 {
     padding-top: 30px;
     padding-bottom: 30px;
     @include md {
@@ -97,7 +97,7 @@ $padding-max: 4;
         padding-top: #{$i + 0.5}rem;
     }
     .pt-#{$i}hq {
-        padding-top: #{$i + 0.75}rem;
+        padding-top: #{$i + 0.875}rem;
     }
     // padding-bottom
     .pb-#{$i} {

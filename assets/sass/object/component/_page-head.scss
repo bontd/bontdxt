@@ -6,10 +6,13 @@
     @include md {
         padding-top: 130px;
     }
-    &-head:not(.pb-0) {
+    &-head {
         padding: 15px 0 14px;
         @include md {
             padding: 3.125rem 0;
+        }
+        &.pb-0 {
+            padding-bottom: 0;
         }
     }
     &-banner {

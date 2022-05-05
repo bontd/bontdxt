@@ -78,6 +78,13 @@ $tsukuARdGothic-serif: 'FOT-TsukuARdGothic Std', sans-serif;
     }
 }
 
+.font-size-hedding-5-2 {
+    font-size: clamp(18px, 6.075vw, 26px);
+    @include md {
+        font-size: clamp(19px, 1.912vw, 26px);
+    }
+}
+
 .font-size-hedding-6 {
     font-size: clamp(15px, 3.738vw, 16px);
     @include md {
@@ -114,7 +121,7 @@ $tsukuARdGothic-serif: 'FOT-TsukuARdGothic Std', sans-serif;
 }
 
 .font-size-section-title {
-    font-size: clamp(29px, 7.009vw, 30px);
+    font-size: clamp(24px, 6.9vw, 30px);
     @include md {
         font-size: clamp(32px, 2.794vw, 38px);
     }
@@ -124,6 +131,13 @@ $tsukuARdGothic-serif: 'FOT-TsukuARdGothic Std', sans-serif;
     font-size: clamp(18px, 6.542vw, 28px);
     @include md {
         font-size: clamp(24px, 2.574vw, 35px);
+    }
+}
+
+.font-size-small {
+    font-size: clamp(12px, 3.738vw, 16px);
+    @include md {
+        font-size: clamp(24px, 2.059vw, 28px);
     }
 }
 
@@ -184,7 +198,7 @@ $tsukuARdGothic-serif: 'FOT-TsukuARdGothic Std', sans-serif;
 }
 
 .font-size-flow {
-    font-size: clamp(24px, 5.841vw, 25px);
+    font-size: clamp(24px, 7.009vw, 30px);
     @include md {
         font-size: clamp(24px, 2.206vw, 30px);
     }
@@ -194,6 +208,13 @@ $tsukuARdGothic-serif: 'FOT-TsukuARdGothic Std', sans-serif;
     font-size: clamp(15px, 3.738vw, 16px);
     @include md {
         font-size: clamp(12px, 1.176vw, 16px);
+    }
+}
+
+.font-size-contact2 {
+    font-size: clamp(18px, 5.607vw, 24px);
+    @include md {
+        font-size: clamp(22px, 2.206vw, 30px);
     }
 }
 
@@ -214,7 +235,7 @@ $tsukuARdGothic-serif: 'FOT-TsukuARdGothic Std', sans-serif;
 .font-size-support {
     font-size: clamp(15px, 3.738vw, 16px);
     @include md {
-        font-size: clamp(25px, 2.574vw, 35px);
+        font-size: clamp(25px, 2.647vw, 36px);
     }
 }
 

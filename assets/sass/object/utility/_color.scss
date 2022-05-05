@@ -45,6 +45,10 @@
     color: $greenDark;
 }
 
+.text-yellow {
+    color: $yellow;
+}
+
 
 /* background-color */
 /* ============================================ */
@@ -81,6 +85,9 @@
     background-color: white;
 }
 
+.bg-yellow {
+    background-color: $yellow;
+}
 
 
 /* border */
@@ -104,6 +111,14 @@
 
 .border-base {
     border-color: $base;
+}
+
+.border-black {
+    border-color: $borderBlack;
+}
+
+.border-yellow {
+    border-color: $yellow;
 }
 
 // white-space

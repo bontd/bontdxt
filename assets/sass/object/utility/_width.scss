@@ -14,13 +14,22 @@
         width: calc(100% - 30px);
     }
 }
-
+.w-90 {
+    width: $ColumnWidth90;
+}
 .w-82 {
     width: $ColumnWidth82;
 }
 .wf {
     width: 100%;
 }
+
+@include mdn {
+    .mw-82 {
+        max-width: 82.8%;
+    }
+}
+
 @include md {
     .w-md-90-2 {
         width: $ColumnWidth90;
@@ -67,6 +76,10 @@
     .minw-md-40 {
         min-width: $ColumnWidth40;
     }
+
+    .w-md-30 {
+        width: 30%;
+    }
 }
 
 
@@ -93,8 +106,44 @@ $width-max: 20;
 //     }
 // }
 
+.col-md-3 {
+    @include md {
+        width: 25%;
+    }
+}
+
+.col-md-4 {
+    @include md {
+        width: 33.33333333%;
+    }
+}
+
+.col-md-5 {
+    @include md {
+        width: 41.66666667%;
+    }
+}
+
 .col-md-6 {
     @include md {
         width: 50%;
+    }
+}
+
+.col-md-7 {
+    @include md {
+        width: 58.33333333%;
+    }
+}
+
+.col-md-8 {
+    @include md {
+        width: 66.66666667%;
+    }
+}
+
+.col-md-9 {
+    @include md {
+        width: 75%;
     }
 }

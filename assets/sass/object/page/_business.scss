@@ -1,0 +1,45 @@
+// page business
+.business {
+    &-picture {
+        .col-md {
+            @include md {
+                width: 30.6666%;
+            }
+        }
+    }
+    &-contact {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        border-radius: 30px;
+        padding: 22px 50px;
+        @include md {
+            position: absolute;
+            right: 0;
+            left: inherit;
+            bottom: -30px;
+            transform: translateX(0);
+        }
+        .ico {
+            width: 43px;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+    }
+    &-aim {
+        .aim-item {
+            @include md {
+                padding: 27.5px 20px;
+            }
+        }
+    }
+}
+
+.character {
+    &-items {
+        width: 328px;
+        height: 328px;
+    }
+}

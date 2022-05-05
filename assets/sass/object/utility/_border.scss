@@ -45,6 +45,10 @@
     }
 }
 
+.border-top-width-1 {
+    border-top-width: 1px;
+}
+
 .border-top-width-2 {
     border-top-width: 2px;
 }
@@ -106,6 +110,10 @@
 
 .round-left {
     border-radius: 0 0 0 1.3em;
+}
+
+.round-pill-30 {
+    border-radius: 1.875rem;
 }
 
 .round-pill {

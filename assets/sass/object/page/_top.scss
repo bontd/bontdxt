@@ -88,17 +88,15 @@
             margin-bottom: 3.75rem;
         }
     }
-    &_thubmnail {
-        margin-bottom: 30px;
-        @include md {
-            margin-bottom: 0;
-        }
-    }
-    &_content {
+    &_content:not(.mw-82) {
         max-width: 94%;
         @include md {
-            padding-left: 2.5rem;
             max-width: unset;
+        }
+    }
+    &_content{
+        @include md {
+            padding-left: 2.5rem;
         }
         .ttl {
             @include md {

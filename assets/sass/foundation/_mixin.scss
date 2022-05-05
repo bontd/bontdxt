@@ -3,6 +3,12 @@
         @content;
     }
 }
+
+@mixin mdn {
+    @media (max-width: ($mdn)) {
+        @content;
+    }
+}
   
 @mixin md {
     @media (min-width: ($md)) {
