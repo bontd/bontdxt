@@ -26,7 +26,7 @@
         display: inline-block;
         margin-bottom: 20px;
         font-size: clamp(14px, 3.738vw, 16px);
-        padding: 20px 10px;
+        padding: 12px 10px;
         z-index: 1;
         @include md {
             font-size: clamp(18px, 1.471vw, 20px);
@@ -119,15 +119,24 @@
             padding-left: 0;
             padding-right: 0;
             &:before, &:after {
-                top: 30px;
+                top: 40px;
+                @include md {
+                    top: 30px;
+                }
             }
 
             &:before {
-                left: - 30px;
+                left: - 40px;
+                @include md {
+                    left: - 30px;
+                }
             }
 
             &:after {
-                right: - 30px;
+                right: - 40px;
+                @include md {
+                    right: - 30px;
+                }
             }
         }
     }
@@ -254,7 +263,7 @@
                 content: "";
                 display: block;
                 position: absolute;
-                bottom: -60px;
+                bottom: -50px;
                 left: 50%;
                 z-index: 2;
                 border: solid 10px transparent;

@@ -61,11 +61,16 @@
 }
 
 .btn_contact_inner {
-    width: 9.06rem;
-    height: 9.06rem;
-    border-radius: 50%;
+    width: 70%;
+    height: 60px;
+    border-radius: 30px;
     color: $base;
     margin: 0 auto;
+    @include md {
+        width: 9.06rem;
+        height: 9.06rem;
+        border-radius: 50%;
+    }
     a {
         display: block;
         position: absolute;
@@ -78,16 +83,19 @@
             content: "";
             display: inline-block;
             position: relative;
-            width: 44px;
-            height: 30px;
+            width: 20px;
+            height: 14px;
+            margin: 0 5px 0 0;
+            top: 2px;
             line-height: 18px;
             background: url(../image/icon_mail_sp.png) no-repeat center center/cover;
             @include md {
                 display: block;
                 width: 40px;
-                height: 30px;
+                height: 28px;
                 margin: 0 auto .625rem;
                 background: url(../image/icon_mail_pc.png) no-repeat center center/cover;
+                top: 0;
             }
         }
     }

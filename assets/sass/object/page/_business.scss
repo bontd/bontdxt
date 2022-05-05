@@ -30,6 +30,7 @@
     }
     &-aim {
         .aim-item {
+            padding: 20px 10px;
             @include md {
                 padding: 27.5px 20px;
             }

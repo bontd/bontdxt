@@ -21,7 +21,7 @@
     &::before, &:after {
         content: '';
         position: absolute;
-        top: 50%;
+        top: calc(50% + 10px);
         width: 56.96px;
         height: 46.98px;
         background-repeat: no-repeat;
