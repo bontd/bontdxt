@@ -501,6 +501,12 @@ table {
   white-space: normal;
 }
 
+@media (min-width: 768px) {
+  .text-md-normal {
+    white-space: normal;
+  }
+}
+
 html,
 body {
   width: 100%;

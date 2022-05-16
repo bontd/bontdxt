@@ -387,3 +387,9 @@ $tsukuARdGothic-serif: 'FOT-TsukuARdGothic Std', sans-serif;
 .text-normal {
     white-space: normal;
 }
+
+@include md {
+    .text-md-normal {
+        white-space: normal;
+    }
+}
