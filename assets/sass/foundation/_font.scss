@@ -93,9 +93,9 @@ $tsukuARdGothic-serif: 'FOT-TsukuARdGothic Std', sans-serif;
 }
 
 .font-size-hedding-news {
-    font-size: clamp(21px, 5.373vw, 23px);
+    font-size: clamp(24px, 7.009vw, 30px);
     @include md {
-        font-size: clamp(18px, 1.838vw, 25px);
+        font-size: clamp(24px, 2.206vw, 30px);
     }
 }
 
@@ -247,6 +247,12 @@ $tsukuARdGothic-serif: 'FOT-TsukuARdGothic Std', sans-serif;
     font-size: 75%;
 }
 
+@include md {
+    .font-size-text-md-20 {
+        font-size: clamp(16px, 1.471vw, 20px);
+    }
+}
+
 
 
 // line-height
@@ -315,6 +321,9 @@ $tsukuARdGothic-serif: 'FOT-TsukuARdGothic Std', sans-serif;
     .text-md-right {
         text-align: right;
     }
+    .text-md-justify {
+        text-align: justify;
+    }
 }
 
 @include lg {
@@ -326,6 +335,9 @@ $tsukuARdGothic-serif: 'FOT-TsukuARdGothic Std', sans-serif;
     }
     .text-lg-right {
         text-align: right;
+    }
+    .text-lg-justify {
+        text-align: justify;
     }
 }
 

@@ -9,18 +9,10 @@
     }
     &-contact {
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
         display: inline-block;
         border-radius: 30px;
         padding: 22px 50px;
-        @include md {
-            position: absolute;
-            right: 0;
-            left: inherit;
-            bottom: -30px;
-            transform: translateX(0);
-        }
+        margin-bottom: 10px;
         .ico {
             width: 43px;
             position: absolute;
@@ -29,6 +21,9 @@
         }
     }
     &-aim {
+        @include md {
+            max-width: 597px;
+        }
         .aim-item {
             padding: 20px 10px;
             @include md {
@@ -42,5 +37,7 @@
     &-items {
         width: 328px;
         height: 328px;
+        padding-top: 60px;
+        padding-bottom: 73px;
     }
 }

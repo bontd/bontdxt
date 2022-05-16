@@ -58,6 +58,46 @@
             margin:0;
         }
     }
+
+
+    .btn_contact_inner {
+        width: 145px;
+        height: 145px;
+        border-radius: 50%;
+        @include md {
+            width: 9.06rem;
+            height: 9.06rem;
+            border-radius: 50%;
+        }
+        a {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            line-height: 1.5;
+            &::before {
+                content: "";
+                display: inline-block;
+                position: relative;
+                width: 44px;
+                height: 30px;
+                margin: 0;
+                top: 2px;
+                line-height: 18px;
+                background: url(../image/icon_mail_sp.png) no-repeat center center/cover;
+                @include md {
+                    display: block;
+                    width: 40px;
+                    height: 28px;
+                    margin: 0 auto .625rem;
+                    background: url(../image/icon_mail_pc.png) no-repeat center center/cover;
+                    top: 0;
+                }
+            }
+        }
+    }
 }
 
 .btn_contact_inner {

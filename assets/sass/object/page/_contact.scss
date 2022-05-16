@@ -28,8 +28,8 @@
 
 .btn_to-faq {
     position: absolute;
-    left: 100%;
-    top: 0;
+    left: calc(100% + 16px);
+    bottom: 0;
     a {
         width: 137px;
         height: 137px;
@@ -60,7 +60,6 @@
         overflow: hidden;
         background-color: $white;
         &:last-child {
-            border: solid 10px $third;
             margin-bottom: 0;
         }
         @include md {

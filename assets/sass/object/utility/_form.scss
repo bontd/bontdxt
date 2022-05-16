@@ -6,12 +6,13 @@
     padding:14px;
     border: solid 2px $primary;
     border-radius: 5px;
+    font-family: $base-serif;
     font-size: 1rem;
     color: $primary;
     resize: vertical;
     @include md {
         min-height: 67px;
-        padding:22.5px 20px;
+        padding:21px 20px;
     }
     &::placeholder {
         color: rgba($color: $primary, $alpha: .3);
@@ -52,8 +53,11 @@
     width: auto;
     position: relative;
     display: inline-block;
-    padding: 5px 0;
-    margin-bottom: 5px;
+    padding: 0;
+    margin-bottom: 6px;
+    &.mb-0 {
+        margin-bottom: 0;
+    }
     input {
         position: absolute;
         opacity: 0;
@@ -67,8 +71,13 @@
         }
     }
     span {
+        font-size: clamp(14px, 3.738vw, 16px);
         line-height: 1.4;
         padding: 0 0 0 30px;
+        white-space: nowrap;
+        @include md {
+            font-size: clamp(16px, 1.471vw, 20px);
+        }
         &:before, &:after {
             content: '';
             position: absolute;

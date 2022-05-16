@@ -31,8 +31,14 @@
 }
 
 @include md {
+    .w-md-92 {
+        width: 92%;
+    }
     .w-md-90-2 {
         width: $ColumnWidth90;
+    }
+    .w-md-87 {
+        width: 87.7%;
     }
     .w-md-73 {
         width: $ColumnWidth73;
@@ -66,11 +72,18 @@
     .mw-md-50 {
         max-width: $ColumnWidth50;
     }
+    .mw-md-47 {
+        max-width: $ColumnWidth47;
+    }
     .mw-md-45 {
         max-width: $ColumnWidth45;
     }
     .mw-md-40 {
         max-width: $ColumnWidth40;
+    }
+
+    .mw-996 {
+        max-width: 996px;
     }
     // min widht
     .minw-md-40 {
