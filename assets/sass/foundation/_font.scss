@@ -247,6 +247,10 @@ $tsukuARdGothic-serif: 'FOT-TsukuARdGothic Std', sans-serif;
     font-size: 75%;
 }
 
+.font-size-text-20 {
+    font-size: clamp(16px, 4.673vw, 20px);
+}
+
 @include md {
     .font-size-text-md-20 {
         font-size: clamp(16px, 1.471vw, 20px);

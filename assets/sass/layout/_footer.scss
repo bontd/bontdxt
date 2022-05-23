@@ -63,17 +63,21 @@
     .btn_contact_inner {
         width: 145px;
         height: 145px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 50%;
         @include md {
             width: 9.06rem;
             height: 9.06rem;
             border-radius: 50%;
         }
-        a {
+        .text, a {
             display: block;
             position: absolute;
             left: 50%;
             top: 50%;
+            padding-right: 0;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             line-height: 1.5;
@@ -103,6 +107,10 @@
 .btn_contact_inner {
     width: 70%;
     height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     border-radius: 30px;
     color: $base;
     margin: 0 auto;
@@ -111,14 +119,22 @@
         height: 9.06rem;
         border-radius: 50%;
     }
-    a {
-        display: block;
+    .text, a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
         position: absolute;
         left: 50%;
         top: 50%;
+        padding-right: 52px;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         line-height: 1.5;
+        @include md {
+            flex-wrap: wrap;
+            padding-right: 0;
+        }
         &::before {
             content: "";
             display: inline-block;
@@ -126,7 +142,7 @@
             width: 20px;
             height: 14px;
             margin: 0 5px 0 0;
-            top: 2px;
+            top: 0;
             line-height: 18px;
             background: url(../image/icon_mail_sp.png) no-repeat center center/cover;
             @include md {
@@ -140,13 +156,15 @@
         }
     }
     .ico {
-        width: 43px;
+        width: 52px;
         position: absolute;
-        bottom: -10px;
-        left: 0;
+        bottom: 50%;
+        right: 5px;
+        transform: translateY(50%);
         @include md {
-            width: 51.55px;
-            left: -25px;
+            bottom: 0;
+            right: calc(100% - 42px);
+            transform: translateY(0);
         }
     }
 }
@@ -168,6 +186,7 @@
             height: 46.98px;
             background-repeat: no-repeat;
             background-size: 100%;
+            z-index: -1;
             @include md {
                 width: 4.18rem;
                 height: 3.5rem;
@@ -199,7 +218,7 @@
             }
         }
     }
-    a {
+    .text, a {
         font-size: clamp(14px, 3.738vw, 16px);
         @include md {
             font-size: clamp(10px, 0.956vw, 13px);

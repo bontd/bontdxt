@@ -385,6 +385,10 @@ table {
   font-size: 75%;
 }
 
+.font-size-text-20 {
+  font-size: clamp(16px, 4.673vw, 20px);
+}
+
 @media (min-width: 768px) {
   .font-size-text-md-20 {
     font-size: clamp(16px, 1.471vw, 20px);
@@ -1256,6 +1260,15 @@ a:hover {
 .footer .btn_contact_inner {
   width: 145px;
   height: 145px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
 }
 
@@ -1267,17 +1280,18 @@ a:hover {
   }
 }
 
-.footer .btn_contact_inner a {
+.footer .btn_contact_inner .text, .footer .btn_contact_inner a {
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
+  padding-right: 0;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   line-height: 1.5;
 }
 
-.footer .btn_contact_inner a::before {
+.footer .btn_contact_inner .text::before, .footer .btn_contact_inner a::before {
   content: "";
   display: inline-block;
   position: relative;
@@ -1290,7 +1304,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .footer .btn_contact_inner a::before {
+  .footer .btn_contact_inner .text::before, .footer .btn_contact_inner a::before {
     display: block;
     width: 40px;
     height: 28px;
@@ -1303,6 +1317,17 @@ a:hover {
 .btn_contact_inner {
   width: 70%;
   height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-radius: 30px;
   color: #B97314;
   margin: 0 auto;
@@ -1316,30 +1341,49 @@ a:hover {
   }
 }
 
-.btn_contact_inner a {
-  display: block;
+.btn_contact_inner .text, .btn_contact_inner a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   position: absolute;
   left: 50%;
   top: 50%;
+  padding-right: 52px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   line-height: 1.5;
 }
 
-.btn_contact_inner a::before {
+@media (min-width: 768px) {
+  .btn_contact_inner .text, .btn_contact_inner a {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-right: 0;
+  }
+}
+
+.btn_contact_inner .text::before, .btn_contact_inner a::before {
   content: "";
   display: inline-block;
   position: relative;
   width: 20px;
   height: 14px;
   margin: 0 5px 0 0;
-  top: 2px;
+  top: 0;
   line-height: 18px;
   background: url(../image/icon_mail_sp.png) no-repeat center center/cover;
 }
 
 @media (min-width: 768px) {
-  .btn_contact_inner a::before {
+  .btn_contact_inner .text::before, .btn_contact_inner a::before {
     display: block;
     width: 40px;
     height: 28px;
@@ -1350,16 +1394,20 @@ a:hover {
 }
 
 .btn_contact_inner .ico {
-  width: 43px;
+  width: 52px;
   position: absolute;
-  bottom: -10px;
-  left: 0;
+  bottom: 50%;
+  right: 5px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 @media (min-width: 768px) {
   .btn_contact_inner .ico {
-    width: 51.55px;
-    left: -25px;
+    bottom: 0;
+    right: calc(100% - 42px);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -1384,6 +1432,7 @@ a:hover {
     height: 46.98px;
     background-repeat: no-repeat;
     background-size: 100%;
+    z-index: -1;
   }
 }
 
@@ -1420,18 +1469,18 @@ a:hover {
   }
 }
 
-.worker-btn-contact:not(.no-ico) a {
+.worker-btn-contact:not(.no-ico) .text, .worker-btn-contact:not(.no-ico) a {
   font-size: clamp(14px, 3.738vw, 16px);
 }
 
 @media (min-width: 768px) {
-  .worker-btn-contact:not(.no-ico) a {
+  .worker-btn-contact:not(.no-ico) .text, .worker-btn-contact:not(.no-ico) a {
     font-size: clamp(10px, 0.956vw, 13px);
   }
 }
 
 @media (max-width: 767px) {
-  .worker-btn-contact:not(.no-ico) a::before {
+  .worker-btn-contact:not(.no-ico) .text::before, .worker-btn-contact:not(.no-ico) a::before {
     width: 20px;
     height: 14px;
   }
@@ -7816,6 +7865,16 @@ a:hover {
   }
 }
 
+@media (min-width: 1500px) {
+  .firstview_copy {
+    width: 100%;
+    left: 50%;
+    max-width: 1135px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 .news_twitter, .news_contents {
   width: 100%;
 }
@@ -8128,26 +8187,17 @@ a:hover {
   width: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 40px;
-}
-
-@media (min-width: 768px) {
-  .googlemap {
-    border-radius: 61px;
-  }
 }
 
 .googlemap iframe {
   width: 100%;
   height: calc(376/428*100vw);
-  border-radius: 40px;
   z-index: -1;
 }
 
 @media (min-width: 768px) {
   .googlemap iframe {
     height: 765px;
-    border-radius: 61px;
   }
 }
 
@@ -8277,6 +8327,12 @@ a:hover {
   }
 }
 
+@media (min-width: 768px) {
+  .worker-contact .ico {
+    right: calc(100% - 22px);
+  }
+}
+
 @media (max-width: 767px) {
   .service .ttl {
     padding-left: 0;
@@ -8370,23 +8426,31 @@ a:hover {
     top: 200px;
     left: 60px;
   }
+}
+
+.story .btn_contact_inner .ico {
+  width: 43px;
+  right: 10px;
+}
+
+@media (min-width: 768px) {
   .story .btn_contact_inner .ico {
     width: 70px;
-    left: -30px;
+    right: calc(100% - 42px);
   }
 }
 
 @media (min-width: 768px) {
-  .story .btn_contact_inner a {
+  .story .btn_contact_inner .text, .story .btn_contact_inner a {
     font-size: 35px;
     line-height: 1;
   }
-  .story .btn_contact_inner a small {
+  .story .btn_contact_inner .text small, .story .btn_contact_inner a small {
     font-size: 19px;
   }
 }
 
-.story .btn_contact_inner a::before {
+.story .btn_contact_inner .text::before, .story .btn_contact_inner a::before {
   display: none;
 }
 
@@ -8516,9 +8580,6 @@ a:hover {
     bottom: -4rem;
     font-size: 18px;
   }
-  .info-right .btn_contact_inner .ico {
-    width: 55px;
-  }
 }
 
 @media (min-width: 992px) {
@@ -8527,9 +8588,6 @@ a:hover {
     height: 188px;
     right: 0;
     font-size: 20px;
-  }
-  .info-right .btn_contact_inner .ico {
-    width: 70px;
   }
 }
 

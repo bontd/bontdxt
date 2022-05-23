@@ -23,6 +23,12 @@
             top: 1.43rem;
             left: calc(168/1360*100vw);
         }
+        @include xxl {
+            width: 100%;
+            left: 50%;
+            max-width: 1135px;
+            transform: translateX(-50%);
+        }
     }
 }
 
@@ -264,18 +270,12 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    border-radius: 40px;
-    @include md {
-        border-radius: 61px;
-    }
     iframe {
         width: 100%;
         height: calc(376/428*100vw);
-        border-radius: 40px;
         z-index: -1;
         @include md {
             height: 765px;
-            border-radius: 61px;
         }
     }
 }

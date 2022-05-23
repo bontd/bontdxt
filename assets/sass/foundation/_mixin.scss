@@ -28,6 +28,12 @@
     }
 }
 
+@mixin xxl {
+    @media (min-width: ($xxl)) {
+        @content;
+    }
+}
+
 
 
 @mixin center-pos {
